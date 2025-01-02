@@ -4,7 +4,6 @@
 
 在Windows系统下使用VS Code插件直接安装ESP-IDF可以参考官方文档：[Install ESP-IDF and Tools](https://docs.espressif.com/projects/vscode-esp-idf-extension/zh_CN/latest/installation.html)，下面介绍安装过程：
 
-
 安装VS Code，并安装ESP-IDF插件
 
 ![](attachments/20241230173816.png)
