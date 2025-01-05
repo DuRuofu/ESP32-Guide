@@ -41,8 +41,8 @@
 
 | 章节             | 教程                     | 文字教程 | 视频教程 | 配套代码 |
 | -------------- | ---------------------- | :--: | :--: | :--: |
-| 一、认识ESP32      | 1.1 ESP32介绍            |  ✔   |      |  无   |
-| 一、认识ESP32      | 1.2 ESP32开发环境搭建        |  ✔   |      |  无   |
+| 一、认识ESP32      | 1.1 ESP32介绍            |  ✔   |  ✔   |  无   |
+| 一、认识ESP32      | 1.2 ESP32开发环境搭建        |  ✔   |  ✔   |  无   |
 | 一、认识ESP32      | 1.3 初试ESP32-HelloWorld |  ✔   |      |      |
 | 二、IDF基础与工具使用   | 2.1 ESP32工程结构及构建       |  ✔   |      |      |
 | 二、IDF基础与工具使用   | 2.2 ESP-IDF项目配置        |  ✔   |      |      |
@@ -97,14 +97,16 @@
 本节主要介绍ESP32的基本概念，包括其硬件特点、应用场景及功能优势。通过本节内容，初学者可以快速了解ESP32的核心能力以及在物联网开发中的广泛应用。  
 
 > 在线文字教程：[ESP32介绍](docs/01.认识ESP32/1.1-ESP32介绍/ESP32介绍.md)
-> 在线视频教程：[ESP32介绍]
+> 在线视频教程：[ESP32介绍](https://www.bilibili.com/video/BV1u861YHEso/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=ef5a0ab0106372751602034cdd9ab98e)
 
 ## 1.2 ESP32开发环境搭建
 
 本节将详细讲解如何在不同操作系统（Windows/Linux/Mac）上搭建ESP-IDF开发环境，涵盖工具链安装、环境变量配置及调试工具的准备等内容。通过本节，读者可以完成开发环境的搭建，为后续开发做好准备。  
 
 > 在线文字教程：[ESP-IDF开发环境搭建](./docs/01.认识ESP32/1.2-ESP32开发环境搭建/ESP32开发环境搭建.md)
-> 在线视频教程：[ESP-IDF开发环境搭建]
+> 在线视频教程-1：[认识ESP32—1.2.1 Win下安装ESP-IDF开发环境](https://www.bilibili.com/video/BV14o62YQEBC?vd_source=ef5a0ab0106372751602034cdd9ab98e&spm_id_from=333.788.videopod.sections)
+> 在线视频教程-2：[认识ESP32—1.2.2 Linux下安装ESP-IDF开发环境](https://www.bilibili.com/video/BV1vLrKYHExy/?vd_source=ef5a0ab0106372751602034cdd9ab98e#reply251069588753)
+> 在线视频教程-3：
 
 ## 1.3 初试ESP32-HelloWorld
 

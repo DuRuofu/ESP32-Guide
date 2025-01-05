@@ -260,6 +260,11 @@ nano ~/.bashrc
 
 ![](attachments/20240125164248.png)
 
+要立即启用修改后的 .bashrc 文件，无需重启终端，只需要使用以下命令加载 .bashrc 文件：
+
+```sh
+source ~/.bashrc
+```
 ### 2.2.5  测试编译
 
 打开历程目录下的hello_world程序：
@@ -272,56 +277,124 @@ nano ~/.bashrc
 
 至此Linux下开发环境安装完成。
 
+```
+# get_idf_env
+alias idf53='. $HOME/esp/v532/esp-idf/export.sh'
 
+```
 # 三、(进阶)Windows下使用ssh调用Linux系统下的开发环境
 
 
-在Windows下使用VS Code通过SSH调用Linux系统的开发环境，可以有效提升编译速度，下面是详细的步骤：
+SSH (Secure Shell) 是一种网络协议，用于在不安全的网络上安全地访问远程设备和服务器。它提供了强大的加密功能，可以保护用户和服务器之间的通信免受窃听、篡改和中间人攻击。
 
-## 3.1 安装Remote - SSH插件
+使用 ssh 命令登录远程服务器：
+
+``` sh
+ssh -p 22 user@host
+```
+
+其中 -p：指定端口号 、user：登录的用户名。host：登录的主机、默认的端口号为22，当端口号为22的时候，可以省略，直接使用如下方式:
+
+```sh
+ssh user@host
+```
+
+在Windows下使用VS Code通过SSH调用Linux系统的开发环境，可以在有效提升编译速度的同时，进一步提升开发体验，下面是详细的步骤：
+
+## 3.1 配置SSH连接，确保可以连接
+
+1. 确保Linux服务器已启动，并记录其IP地址或主机名，在Linux使用`ifconfig`命令查询虚拟机IP（也可以使用`ip a`命令），找不到命令 `ifconfig`，但可以通过以下命令安装它：
+
+```sh
+sudo apt install net-tools
+```
+
+查看IP：
+
+![](attachments/Pasted%20image%2020250105213409.png)
+
+
+2. 在 Ubuntu 上启用 SSH，打开终端，并且安装openssh-server软件包
+
+```sh
+sudo apt install openssh-server
+```
+
+一旦安装完成之后，SSH 服务将会被自动启动。可以s输入下面的命令验证 SSH 是否正在运行：
+
+```sh
+sudo systemctl status ssh
+```
+
+如果防火墙被启用，还需要下面的命令打开了 SSH 端口
+
+```sh
+sudo ufw allow ssh
+```
+
+3. 在Windows的CMD进行测试连接，ssh 用户名@服务器IP地址
+
+![](attachments/Pasted%20image%2020250105213305.png)
+  
+  这一步可能需要在Windows上安装OpenSSH客户端（默认Windows 10及以上版本自带）
+## 3.2 安装Remote - SSH插件
 
 打开VS Code，点击左侧的扩展市场图标，搜索`Remote - SSH`插件并安装。
 
+![](attachments/Pasted%20image%2020250104234434.png)
 
-## 3.2 配置SSH连接
 
-1. 确保Linux服务器已启动，并记录其IP地址或主机名。
-2. 在Windows上安装OpenSSH客户端（默认Windows 10及以上版本自带）。
-3. 打开VS Code，按下`Ctrl+Shift+P`，输入`Remote-SSH: Add New SSH Host`并选择该项。
-4. 输入SSH连接命令，例如：  
-   ssh 用户名@服务器IP地址  
-   然后选择一个保存SSH配置的路径（默认路径是`~/.ssh/config`）。
-5. 如果是首次连接，请在终端中手动测试SSH连接：  
-   ssh 用户名@服务器IP地址  
-   输入密码以验证连接是否正常。如果有提示接受主机密钥，请输入`yes`。
 ## 3.3 通过Remote - SSH连接到Linux服务器
 
-1. 按下`Ctrl+Shift+P`，输入`Remote-SSH: Connect to Host`并选择该项。
-2. 在弹出的列表中选择刚刚添加的SSH主机，等待连接。
-3. 成功连接后，VS Code会显示远程的文件系统。
-## 3.4 在Linux系统中配置ESP-IDF环境
+1. 打开VS Code，按下`Ctrl+Shift+P`，输入`Remote-SSH: Add New SSH Host`并选择该项。
+2. 输入SSH连接命令，例如：  
+   ssh 用户名@服务器IP地址  
+   然后选择一个保存SSH配置的路径（默认路径是`~/.ssh/config`）。
 
-1. 在SSH连接的Linux终端中执行以下命令以激活ESP-IDF环境：
-   . ~/esp/esp-idf/export.sh
-   （如果已在`.bashrc`中配置快捷命令，可以直接执行对应的别名命令，如`source-esp523`）。
-
-2. 确保Linux的开发环境已经安装完毕（参考前文2.2部分）。
-## 3.5 在VS Code中打开ESP-IDF工程
+## 3.4 在VS Code中打开ESP-IDF工程
 
 1. 使用VS Code的`File -> Open Folder`功能，选择Linux服务器中的ESP-IDF项目目录：
-   ~/esp/esp-idf/examples/get-started/hello_world
+   例如： `~/esp/esp-idf/examples/get-started/hello_world`
 2. 打开项目后，VS Code会加载远程的文件结构。
+
+## 3.5 配置密钥，实现免密连接
+
+1. 在Windows下使用`ssh-keygen`生成密钥，按提示操作：
+   默认保存路径是 ~/.ssh/id_rsa（直接按回车即可）。可为密钥设置密码，如果不想设置，直接回车跳过。生成完成后，会在默认路径下生成：
+	- 公钥：~/.ssh/id_rsa.pub
+	- 私钥：~/.ssh/id_rsa
+2. 将公钥复制到远程服务器
+   在本地机器上，找到你的公钥文件（通常在 ~/.ssh/id_rsa.pub）并查看内容，进行复制。
+   使用 SSH 登录到远程服务器，创建 .ssh 目录并设置权限
+   
+``` sh
+mkdir -p ~/.ssh
+chmod 700 ~/.ssh
+```
+   
+   添加公钥到 authorized_keys 文件，编辑 ~/.ssh/authorized_keys 文件,将复制的公钥粘贴到文件中并保存.
+   
+``` sh
+nano ~/.ssh/authorized_keys
+```
+
+最后，设置 authorized_keys 文件的权限：
+
+``` sh
+chmod 600 ~/.ssh/authorized_keys
+```
+
 ## 3.6 编译和调试项目
 
 1. 在终端窗口中，运行以下命令以编译项目：
-   idf.py build
+  ` idf.py build`
 
 2. 如果需要烧录代码到开发板，确保开发板通过USB连接到Linux服务器，然后运行以下命令：
-   idf.py -p /dev/ttyUSB0 flash
+ `idf.py -p /dev/ttyUSB0 flash`
    （根据实际情况替换正确的串口设备路径。）
 
 3. 编译和烧录完成后，可以通过以下命令监控串口输出：
-   idf.py -p /dev/ttyUSB0 monitor
+  ` idf.py -p /dev/ttyUSB0 monitor`
 
 
 ## 参考链接
