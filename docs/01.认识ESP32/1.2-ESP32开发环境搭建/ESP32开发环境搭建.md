@@ -311,7 +311,7 @@ sudo apt install net-tools
 
 查看IP：
 
-![](attachments/Pasted%20image%2020250105213409.png)
+![](attachments/20250105213409.png)
 
 
 2. 在 Ubuntu 上启用 SSH，打开终端，并且安装openssh-server软件包
@@ -334,14 +334,14 @@ sudo ufw allow ssh
 
 3. 在Windows的CMD进行测试连接，ssh 用户名@服务器IP地址
 
-![](attachments/Pasted%20image%2020250105213305.png)
+![](attachments/20250105213305.png)
   
   这一步可能需要在Windows上安装OpenSSH客户端（默认Windows 10及以上版本自带）
 ## 3.2 安装Remote - SSH插件
 
 打开VS Code，点击左侧的扩展市场图标，搜索`Remote - SSH`插件并安装。
 
-![](attachments/Pasted%20image%2020250104234434.png)
+![](attachments/20250104234434.png)
 
 
 ## 3.3 通过Remote - SSH连接到Linux服务器

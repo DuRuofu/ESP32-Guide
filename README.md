@@ -33,7 +33,7 @@
 |    ESP32学习计划    | v1.3.0 | DuRuofu |  2024-02   |  补充IDF基础  |
 |    ESP32学习计划    | v1.4.0 | DuRuofu |  2024-03   |  补充外设学习   |
 |    ESP32学习计划    | v1.4.0 | DuRuofu |  2024-04   | 补充WIFI部分  |
-| ESP32从菜鸟到入门（一稿） | v1.5.0 | DuRuofu | 2024-12-26 | 整理汇总，重新编排 |
+| ESP32从初见到入门（一稿） | v1.5.0 | DuRuofu | 2024-12-26 | 整理汇总，重新编排 |
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -42,7 +42,7 @@
 | 章节             | 教程                     | 文字教程 | 视频教程 | 配套代码 |
 | -------------- | ---------------------- | :--: | :--: | :--: |
 | 一、认识ESP32      | 1.1 ESP32介绍            |  ✔   |  ✔   |  无   |
-| 一、认识ESP32      | 1.2 ESP32开发环境搭建        |  ✔   |  ✔   |  无   |
+| 一、认识ESP32      | 1.2 ESP32开发环境搭建        |  ✔   | ✔✔✔  |  无   |
 | 一、认识ESP32      | 1.3 初试ESP32-HelloWorld |  ✔   |      |      |
 | 二、IDF基础与工具使用   | 2.1 ESP32工程结构及构建       |  ✔   |      |      |
 | 二、IDF基础与工具使用   | 2.2 ESP-IDF项目配置        |  ✔   |      |      |
@@ -88,6 +88,13 @@
 至于LVGL，特殊外设，实战演练部分，会在教程章节单独推荐开发板。
 
 
+
+## 常见问题及解决方案：
+
+本部分记录搭建环境和开发过程中常见的问题和解决方案，都是本人在开发过程中遇到的，作为经验积累，分享给大家。
+
+> 常见问题及解决方案：[常见问题及解决方案.md](docs/00.常见问题及解决方案/常见问题及解决方案.md)
+
 # 一、认识ESP32  
 
 > 目标：学会安装ESP-IDF开发环境，并使用其烧录代码，掌握ESP32的基本特点及工具使用。  
@@ -96,25 +103,25 @@
 
 本节主要介绍ESP32的基本概念，包括其硬件特点、应用场景及功能优势。通过本节内容，初学者可以快速了解ESP32的核心能力以及在物联网开发中的广泛应用。  
 
-> 在线文字教程：[ESP32介绍](docs/01.认识ESP32/1.1-ESP32介绍/ESP32介绍.md)
-> 在线视频教程：[ESP32介绍](https://www.bilibili.com/video/BV1u861YHEso/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=ef5a0ab0106372751602034cdd9ab98e)
+- 在线文字教程：[ESP32介绍.md](./docs/01.认识ESP32/1.1-ESP32介绍/ESP32介绍.md)
+- 在线视频教程：[ESP32介绍](https://www.bilibili.com/video/BV1u861YHEso/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=ef5a0ab0106372751602034cdd9ab98e)
 
 ## 1.2 ESP32开发环境搭建
 
 本节将详细讲解如何在不同操作系统（Windows/Linux/Mac）上搭建ESP-IDF开发环境，涵盖工具链安装、环境变量配置及调试工具的准备等内容。通过本节，读者可以完成开发环境的搭建，为后续开发做好准备。  
 
-> 在线文字教程：[ESP-IDF开发环境搭建](./docs/01.认识ESP32/1.2-ESP32开发环境搭建/ESP32开发环境搭建.md)
-> 在线视频教程-1：[认识ESP32—1.2.1 Win下安装ESP-IDF开发环境](https://www.bilibili.com/video/BV14o62YQEBC?vd_source=ef5a0ab0106372751602034cdd9ab98e&spm_id_from=333.788.videopod.sections)
-> 在线视频教程-2：[认识ESP32—1.2.2 Linux下安装ESP-IDF开发环境](https://www.bilibili.com/video/BV1vLrKYHExy/?vd_source=ef5a0ab0106372751602034cdd9ab98e#reply251069588753)
-> 在线视频教程-3：
+- 在线文字教程：[ESP-IDF开发环境搭建.md](./docs/01.认识ESP32/1.2-ESP32开发环境搭建/ESP32开发环境搭建.md)
+- 在线视频教程-1：[认识ESP32—1.2.1 Win下安装ESP-IDF开发环境](https://www.bilibili.com/video/BV14o62YQEBC?vd_source=ef5a0ab0106372751602034cdd9ab98e&spm_id_from=333.788.videopod.sections)
+- 在线视频教程-2：[认识ESP32—1.2.2 Linux下安装ESP-IDF开发环境](https://www.bilibili.com/video/BV1vLrKYHExy/?vd_source=ef5a0ab0106372751602034cdd9ab98e#reply251069588753)
+- 在线视频教程-3：[认识ESP32—1.2.3 Windows下使用ssh调用Linux系统下的开发环境](https://www.bilibili.com/video/BV1vLrKYHExy/?vd_source=ef5a0ab0106372751602034cdd9ab98e#reply251069588753)
 
 ## 1.3 初试ESP32-HelloWorld
 
 本节通过“Hello World”示例代码，指导读者创建第一个ESP32工程，并完成编译、烧录及运行调试流程。通过本节内容，初学者可以初步体验ESP-IDF的开发流程，快速进入ESP32开发的世界。  
 
-> 在线文字教程：[ESP32初体验-HelloWorld](./docs/01.认识ESP32/1.3-初试ESP32-HelloWorld/初试ESP32-HelloWorld.md)
-> 在线视频教程：[ESP32初体验-HelloWorld]
-> 教程配套代码：[HelloWorld 示例代码]
+- 在线文字教程：[ESP32初体验-HelloWorld.md](./docs/01.认识ESP32/1.3-初试ESP32-HelloWorld/初试ESP32-HelloWorld.md)
+- 在线视频教程：[ESP32初体验-HelloWorld]
+- 教程配套代码：[HelloWorld 示例代码]
 
 ---
 
@@ -126,33 +133,33 @@
 
 本节详细介绍ESP-IDF项目的基本目录结构与构建流程，包括CMake工具的基础知识，帮助读者掌握ESP32工程的整体组织方式，为日后开发复杂项目奠定基础。  
 
-> 在线文字教程：[ESP32工程结构及构建](./docs/02.IDF基础与工具使用/2.1-ESP32工程结构及构建/ESP32工程结构及构建.md)
-> 在线视频教程：[ESP32工程结构及构建]  
-> 教程配套代码：[基础工程模板](#)  
+- 在线文字教程：[ESP32工程结构及构建](./docs/02.IDF基础与工具使用/2.1-ESP32工程结构及构建/ESP32工程结构及构建.md)
+- 在线视频教程：[ESP32工程结构及构建]  
+- 教程配套代码：[基础工程模板](#)  
 
 ## 2.2 ESP-IDF项目配置
 
 本节将重点讲解如何使用`menuconfig`工具配置项目，包含常见的配置选项及其实际用途。通过本节学习，读者可以根据项目需求快速定制和优化ESP32项目配置。  
 
-> 在线文字教程：[ESP-IDF项目配置](./docs/02.IDF基础与工具使用/2.2-ESP-IDF项目配置/ESP-IDF项目配置.md)  
-> 在线视频教程：[ESP-IDF项目配置详解]  
-> 教程配套代码：[项目配置示例代码](#)  
+- 在线文字教程：[ESP-IDF项目配置](./docs/02.IDF基础与工具使用/2.2-ESP-IDF项目配置/ESP-IDF项目配置.md)  
+- 在线视频教程：[ESP-IDF项目配置详解]  
+- 教程配套代码：[项目配置示例代码](#)  
 
 ## 2.3 ESP-IDF自定义组件
 
 本节讲解如何创建和管理ESP-IDF的自定义组件，包括组件的目录结构、声明与调用方法，以及组件的复用和共享技巧，帮助读者构建模块化项目。  
 
-> 在线文字教程：[ESP-IDF自定义组件](./docs/02.IDF基础与工具使用/2.3-ESP-IDF自定义组件/ESP-IDF自定义组件.md)
-> 在线视频教程：[ESP-IDF自定义组件开发详解]  
-> 教程配套代码：[组件示例代码](#)  
+- 在线文字教程：[ESP-IDF自定义组件](./docs/02.IDF基础与工具使用/2.3-ESP-IDF自定义组件/ESP-IDF自定义组件.md)
+- 在线视频教程：[ESP-IDF自定义组件开发详解]  
+- 教程配套代码：[组件示例代码](#)  
 
 ## 2.4 ESP-IDF组件管理器
 
 本节重点介绍ESP-IDF组件管理器的功能与使用方法，涵盖如何通过组件管理器导入外部库、配置组件依赖，以及解决组件冲突的问题，帮助读者高效管理复杂项目的依赖关系。  
 
-> 在线文字教程：[ESP-IDF组件管理器](./docs/02.IDF基础与工具使用/2.4-ESP-IDF组件管理器/ESP-IDF组件管理器.md)  
-> 在线视频教程：[ESP-IDF组件管理器详解]  
-> 教程配套代码：[组件管理器示例代码](#)  
+- 在线文字教程：[ESP-IDF组件管理器](./docs/02.IDF基础与工具使用/2.4-ESP-IDF组件管理器/ESP-IDF组件管理器.md)  
+- 在线视频教程：[ESP-IDF组件管理器详解]  
+- 教程配套代码：[组件管理器示例代码](#)  
 
 ---
 

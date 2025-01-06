@@ -124,3 +124,5 @@ Linux下可以可以使用`ls /dev/ttyUSB*`命令查看可用串口。
 对应，也可以使用命令`idf.py -p /dev/ttyUSB0 flash monitor`，效果相同。
 
 至此我们就借助 Hello world工程，掌握了最基本的ESP32开发流程。第一章认识ESP32到此结束，下一章将进一步熟悉ESP-IDF的架构与开发流程，掌握工程结构和常用开发工具及调试方法，建立高效开发基础。
+
+
