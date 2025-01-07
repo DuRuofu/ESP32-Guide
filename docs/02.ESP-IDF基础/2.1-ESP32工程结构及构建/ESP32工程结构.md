@@ -1,20 +1,38 @@
 
-ESP-IDF 的项目工程与 Keil 的传统工程模式有显著不同。Keil 工程通常依赖于特定的项目文件格式（如 .uvprojx 或 .uvoptx），这些文件记录了项目的结构、配置和依赖，且需要通过 Keil 软件进行管理和编译。而 ESP-IDF 则采用更灵活的构建方式，ESP-IDF 的项目通过标准的文本文件（如 CMakeLists.txt ）来定义构建规则。这些文件描述了项目的源码路径、依赖关系和编译选项，而不是依赖于 IDE 专属的配置格式。这样可以方便地在不同的开发环境中切换。
+ESP-IDF 的项目工程与 Keil 的传统工程模式有显著不同。Keil 工程通常依赖于特定的项目文件格式（如 .uvprojx 或 .uvoptx），这些文件记录了项目的结构、配置和依赖，且需要通过 Keil 软件进行管理和编译。而 ESP-IDF 则采用更灵活的构建方式，ESP-IDF 的项目只是一个特定的文件夹，其中包含了构建可执行应用程序所需的全部文件和配置，以及其他支持型文件，例如分区表、数据/文件系统分区和引导程序。这些文件描述了项目的源码路径、依赖关系和编译选项，而不是依赖于 IDE 专属的配置格式。这样可以方便地在不同的开发环境中切换。
 
-关于ESP-IDF工程结构可以参考官方文档：
+关于ESP-IDF工程结构可以参考官方文档：[示例项目](https://docs.espressif.com/projects/esp-idf/zh_CN/v5.3.2/esp32/api-guides/build-system.html#example-project-structure)
+
+这部分没有什么新的东西，只是需要明白ESP-IDF所规定的项目框架，下面的内容都提炼自官方文档，大家也可以直接前往官方文档查看。
 ### 项目目录
 
 esp-idf的标准目录如下所示：
 
-![](attachments/20240218174718.png)
+```c
+- myProject/
+             - CMakeLists.txt
+             - sdkconfig
+             - components/ - component1/ - CMakeLists.txt
+                                         - Kconfig
+                                         - src1.c
+                           - component2/ - CMakeLists.txt
+                                         - Kconfig
+                                         - src1.c
+                                         - include/ - component2.h
+             - main/       - CMakeLists.txt
+                           - src1.c
+                           - src2.c
+             - build/
+```
 
--  `CMakeLists.txt` 文件，这是 CMake 用于学习如何构建项目的主要文件，可以在这个文件中设置项目全局的 CMake 变量。顶层项目 CMakeLists.txt 文件会导入 /tools/cmake/project.cmake 文件，由它负责实现构建系统的其余部分。该文件最后会设置项目的名称，并定义该项目。
+
+-  `CMakeLists.txt` 文件，这是 CMake 用于学习如何构建项目的主要文件，可以在这个文件中设置项目全局的 CMake 变量。顶层项目 CMakeLists.txt 文件会导入/tools/cmake/project.cmake 文件，由它负责实现构建系统的其余部分。该文件最后会设置项目的名称，并定义该项目。
   
 - `sdkconfig` 项目配置文件，执行 idf.py menuconfig 时会创建或更新此文件，文件中保存了项目中所有组件（包括 ESP-IDF 本身）的配置信息。 sdkconfig 文件可能会也可能不会被添加到项目的源码管理系统中。
   
 - 可选的 `components` 目录中包含了项目的部分自定义组件，并不是每个项目都需要这种自定义组件，但它有助于构建可复用的代码或者导入第三方（不属于 ESP-IDF）的组件。或者，您也可以在顶层 CMakeLists.txt 中设置 EXTRA_COMPONENT_DIRS 变量以查找其他指定位置处的组件。有关详细信息，请参阅 重命名 main 组件。如果项目中源文件较多，建议将其归于组件中，而不是全部放在 “main” 中
   
-- - `main` 目录是一个特殊的组件，它包含项目本身的源代码。”main” 是默认名称，CMake 变量 COMPONENT_DIRS 默认包含此组件，但您可以修改此变量。
+- `main` 目录是一个特殊的组件，它包含项目本身的源代码。”main” 是默认名称，CMake 变量 COMPONENT_DIRS 默认包含此组件，但您可以修改此变量。
   
 - `build` 目录是存放构建输出的地方，如果没有此目录，idf.py 会自动创建。CMake 会配置项目，并在此目录下生成临时的构建文件。随后，在主构建进程的运行期间，该目录还会保存临时目标文件、库文件以及最终输出的二进制文件。此目录通常不会添加到项目的源码管理系统中，也不会随项目源码一同发布。
 
@@ -69,6 +87,7 @@ idf_component_register(SRCS "my_component.c"
 
 - `REQUIRES` 声明组件的public依赖，可供其他依赖者访问
 - `PRIV_REQUIRES`声明private依赖，只能被当前组件访问。
+
 # 参考链接
 
 1. https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/api-guides/build-system.html

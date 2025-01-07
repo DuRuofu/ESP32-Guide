@@ -1,26 +1,30 @@
 
-### 说明：
-
-1. 本文档由DuRuofu撰写，由DuRuofu负责解释及执行。
-
-### 修订历史：
-
-| 文档名称 | 版本 | 作者 | 时间 | 备注 |
-| ---- | ---- | ---- | ---- | ---- |
-| ESP-IDF自定义组件 | v1.0.0 | DuRuofu | 2024-02-18 | 首次建立 |
-
-<div STYLE="page-break-after: always;"></div>
-
-# ESP-IDF自定义组件
-
 ## 一 、自定义组件介绍：
 
 之前在[ESP32工程结构](../2.1-ESP32工程结构及构建/ESP32工程结构.md)里提到esp-idf项目的结构如下：
 
-![](attachments/20240218174718.png)
+```
+- myProject/
+             - CMakeLists.txt
+             - sdkconfig
+             - bootloader_components/ - boot_component/ - CMakeLists.txt
+                                                        - Kconfig
+                                                        - src1.c
+             - components/ - component1/ - CMakeLists.txt
+                                         - Kconfig
+                                         - src1.c
+                           - component2/ - CMakeLists.txt
+                                         - Kconfig
+                                         - src1.c
+                                         - include/ - component2.h
+             - main/       - CMakeLists.txt
+                           - src1.c
+                           - src2.c
+
+             - build/
+```
 
 其中components文件夹就是我们自定义的组件。ESP-IDF组件机制就是代码模块化的一种体现，将特定功能的代码封装为一个个组件并对外暴露接口，增强代码的可复用性，提高代码维护效率。
-
 
 ## 二 、自定义组件示例：
 
@@ -50,7 +54,7 @@
 
 ``` c
 #include <stdio.h>
-	#include "led_blink.h"
+#include "led_blink.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "driver/gpio.h"
@@ -183,8 +187,6 @@ menu "点灯组件配置"
 endmenu
 
 ```
-
-
 这样就编写好了一个组件。
 
 
