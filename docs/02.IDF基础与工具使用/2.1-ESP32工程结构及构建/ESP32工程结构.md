@@ -1,68 +1,7 @@
 
-## 一、编译并烧录示例程序
+ESP-IDF 的项目工程与 Keil 的传统工程模式有显著不同。Keil 工程通常依赖于特定的项目文件格式（如 .uvprojx 或 .uvoptx），这些文件记录了项目的结构、配置和依赖，且需要通过 Keil 软件进行管理和编译。而 ESP-IDF 则采用更灵活的构建方式，ESP-IDF 的项目通过标准的文本文件（如 CMakeLists.txt ）来定义构建规则。这些文件描述了项目的源码路径、依赖关系和编译选项，而不是依赖于 IDE 专属的配置格式。这样可以方便地在不同的开发环境中切换。
 
-首先编译一个示例程序：hello_world
-
-示例程序目录：esp-idf/examples/get-started/hello_world
-
-使用vscode打开示例程序：
-
-![](attachments/20240218170437.png)
-
-使用自定义的命令 `get_idf_v5` 获取环境变量（[关于自定义命令](https://duruofu.github.io/2024/01/25/4.%E7%A1%AC%E4%BB%B6%E7%9B%B8%E5%85%B3/MCU/ESP32/%E6%90%AD%E5%BB%BAesp-idf%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/)）：
-
-![](attachments/20240218170817.png)
-
-使用`idf.py set-target esp32`配置开发板为ESP32，按照提示使用`idf.py build`命令编译程序：
-
-![](attachments/20240218171102.png)
-
-使用`ls /dev/ttyUSB*`查询串口（linux）：
-
-![](attachments/20240218171312.png)
-
-使用`idf.py  -p  {PORT}  flash`命令烧录代码到esp32：
-
-![](attachments/20240218171506.png)
-
-烧录完成如下：
-
-![](attachments/20240218171516.png)
-
-使用`idf.py  -p  {PORT}  monitor` 命令打开串口监视器：
-
-![](attachments/20240218171709.png)
-
-成功输出：
-
-![](attachments/20240218171754.png)
-
-## 二、新建工程
-
-### 新建基础工程
-
-加载idf.py环境变量后，使用`idf.py create-project filename`  创建工程
-
-![](attachments/20240218172510.png)
-
-创建好的工程如下：
-
-![](attachments/20240218174120.png)
-
-进入刚刚创建好的工程下，配置目标芯片，我以ESP32为例  `idf.py set-target esp32`
-
-![](attachments/20240218174256.png)
-设置目标芯片后，会出现如图结构 , 其中build是编译过程中会出现的文件，sdkconfig是运行用于保存menuconfig的文件。
-
-### 新建组件
-
-不知道组件是啥也不打紧，后面会系统学习，这里只说明如何新建自定义组件：
-
-使用命令：`idf.py -C components create-component my_component`
-
-![](attachments/20240218175156.png)
-## 三、工程结构
-
+关于ESP-IDF工程结构可以参考官方文档：
 ### 项目目录
 
 esp-idf的标准目录如下所示：
