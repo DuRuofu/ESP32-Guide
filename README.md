@@ -115,13 +115,12 @@
 - 在线视频教程-2：[认识ESP32—1.2.2 Linux下安装ESP-IDF开发环境](https://www.bilibili.com/video/BV1vLrKYHExy/?vd_source=ef5a0ab0106372751602034cdd9ab98e#reply251069588753)
 - 在线视频教程-3：[认识ESP32—1.2.3 Windows下使用ssh调用Linux系统下的开发环境](https://www.bilibili.com/video/BV1vLrKYHExy/?vd_source=ef5a0ab0106372751602034cdd9ab98e#reply251069588753)
 
-## 1.3 初试ESP32-HelloWorld
+## 1.3 初试ESP32-idf.py的基本使用
 
 本节通过“Hello World”示例代码，指导读者创建第一个ESP32工程，并完成编译、烧录及运行调试流程。通过本节内容，初学者可以初步体验ESP-IDF的开发流程，快速进入ESP32开发的世界。  
 
-- 在线文字教程：[ESP32初体验-HelloWorld.md](./docs/01.认识ESP32/1.3-初试ESP32-HelloWorld/初试ESP32-HelloWorld.md)
-- 在线视频教程：[ESP32初体验-HelloWorld]
-- 教程配套代码：[HelloWorld 示例代码]
+- 在线文字教程：[ESP32初体验-idf.py的基本使用](docs/01.认识ESP32/1.3-初试ESP32-idf.py的基本使用/idf.py的基本使用.md)
+- 在线视频教程：[ESP32初体验-idf.py的基本使用]
 
 ---
 

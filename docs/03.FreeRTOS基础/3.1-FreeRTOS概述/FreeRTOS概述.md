@@ -1,0 +1,1 @@
+FreeRTOS 是一个开源的 RTOS（实时操作系统）内核，它以组件的形式集成到 ESP-IDF 中。因此，所有的 ESP-IDF 应用程序及多种 ESP-IDF 组件都基于 FreeRTOS 编写。FreeRTOS 内核已移植到 ESP 芯片的所有 CPU 架构（即 Xtensa 和 RISC-V）中。

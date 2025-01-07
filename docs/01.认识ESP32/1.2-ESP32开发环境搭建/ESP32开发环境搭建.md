@@ -282,6 +282,10 @@ source ~/.bashrc
 alias idf53='. $HOME/esp/v532/esp-idf/export.sh'
 
 ```
+
+最后在这里分享本节安装使用的相关软件和安装好IDF的Linux虚拟机：[软件资源](https://www.alipan.com/s/PRCdvqnzCWL)
+
+
 # 三、(进阶)Windows下使用ssh调用Linux系统下的开发环境
 
 

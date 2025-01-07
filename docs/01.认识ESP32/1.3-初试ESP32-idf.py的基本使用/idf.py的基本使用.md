@@ -2,16 +2,24 @@
 
 # 一、常用idf.py命令介绍
 
+| 功能       | 命令                                                      | 备注                              |
+| -------- | ------------------------------------------------------- | ------------------------------- |
+| 创建新工程    | `idf.py create-project <project name>`                  | `<project name>` 为项目名称          |
+| 创建新组件    | `idf.py -C components create-component {componentName}` | `{componentName}` 为组件名称         |
+| 选择目标芯片   | `idf.py set-target <target>`                            | `<target>` 为芯片型号，不输入参数会列出所有可用型号 |
+| 启动图形配置工具 | `idf.py menuconfig`                                     | 配置项目的菜单选项                       |
+| 构建工程     | `idf.py build`                                          | 编译生成固件                          |
+| 清除构建输出   | `idf.py clean`                                          | 清除中间文件                          |
+| 删除所有构建内容 | `idf.py fullclean`                                      | 清除所有生成的文件                       |
+| 烧录工程     | `idf.py -p /dev/ttyUSB0 flash`                          | `/dev/ttyUSB0` 为目标串口，根据实际情况修改   |
+| 打开串口监视器  | `idf.py -p /dev/ttyUSB0 monitor`                        | `/dev/ttyUSB0` 为目标串口，根据实际情况修改   |
+| 构建、烧录并监视 | `idf.py -p /dev/ttyUSB0 flash monitor`                  | `/dev/ttyUSB0` 为目标串口，根据实际情况修改   |
+| 打开文档     | `idf.py docs`                                           |                                 |
 
-- 创建工程：`idf.py create-project  <project name>` 
-- 新建组件`idf.py -C components create-component {componentName}`
-- 清除之前的编译：` idf.py fullclean`           
-- 编译:  `idf.py build`          
-- 向串口烧录固件: `idf.py  -p  /dev/ttyUSB0  flash`    （`/dev/ttyUSB0`  为目标串口参数，根据实际填写）      
-- 打开串口监视器:`idf.py  -p  /dev/ttyUSB0  monitor`   （`/dev/ttyUSB0`  为目标串口参数，根据实际填写）   
--  配置菜单 :`idf.py  menuconfig  `             
-- 选择芯片型号：` idf.py set-target esp32 `  不输入参数的话，会列出所有可用型号
-- 一次性执行构建、烧录和监视过程：`idf.py -p /dev/ttyUSB0 flash monitor`  （`/dev/ttyUSB0`  为目标串口参数，根据实际填写）   
+补充其他可能用到命令：
+
+- Linux下查询可用串口:`ls /dev/ttyUSB*`
+- 添加串口权限(需重启)：`sudo usermod -aG dialout username`
 
 
 **有一点需要说明**：我们使用VS Code+ESP-IDF插件进行开发，所使用的图形界面实际上就是在命令行里运行上述命令。
@@ -20,6 +28,7 @@
 
 
 ![](attachments/20250102173106.png)
+
 
 点击小扳手图标构建项目，与在命令行对应目录下使用`idf.py build`命令，具有一模一样的效果，ESP-IDF插件只是为我们提供了一个可视化界面。
 当我们使用熟练后，使用可视化界面与直接使用命令没有什么区别，考虑到本教程不仅仅针对使用VS Code+ESP-IDF插件环境的学习者，**所以后续的教程中可能更多的以使用命令行命令为主，望读者周知**，这只是个人习惯，您在开发过程中可以选用您喜欢的操作方式，本质上没有区别。
@@ -125,4 +134,22 @@ Linux下可以可以使用`ls /dev/ttyUSB*`命令查看可用串口。
 
 至此我们就借助 Hello world工程，掌握了最基本的ESP32开发流程。第一章认识ESP32到此结束，下一章将进一步熟悉ESP-IDF的架构与开发流程，掌握工程结构和常用开发工具及调试方法，建立高效开发基础。
 
+
+# 三、其他高级命令
+
+下面列出一些其他高级命令：
+
+| 命令                                      | 描述                                                   |
+|-------------------------------------------|--------------------------------------------------------|
+| `idf.py size`                             | 显示应用程序的总大小                                     |
+| `idf.py size-components`                  | 显示各组件的大小                                         |
+| `idf.py size-files`                       | 显示各文件的大小                                         |
+| `idf.py reconfigure`                      | 重新配置工程                                             |
+| `idf.py python-clean`                     | 清除 Python 字节码                                       |
+| `idf.py merge-bin [-o output-file] [-f format] [<format-specific-options>]` | 合并二进制文件，支持指定输出文件和格式选项               |
+| `idf.py uf2`                              | 生成 UF2 二进制文件                                      |
+| `idf.py read-otadata`                     | 读取 Otadata 分区                                       |
+
+
+idf.py 还有很多其他有用的命令，只是我们入门阶段可能暂时用不到，更多内容可以参考官方文档：[IDF 前端工具 - idf.py](https://docs.espressif.com/projects/esp-idf/zh_CN/stable/esp32/api-guides/tools/idf-py.html)
 
