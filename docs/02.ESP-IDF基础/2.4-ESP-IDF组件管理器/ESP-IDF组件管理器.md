@@ -1,4 +1,4 @@
-
+关于ESP-IDF组件管理器的文档，可以参考：[ API 指南 » 工具 » IDF 组件管理器](https://docs.espressif.com/projects/esp-idf/zh_CN/stable/esp32/api-guides/tools/idf-component-manager.html)
 ## 一、啥是组件管理器
 
 ESP-IDF官方对组件管理器的描述是这样的：
@@ -11,18 +11,18 @@ ESP-IDF官方对组件管理器的描述是这样的：
 
 说人话就是，世上本没有组件管理器，自定义组件多了，就有了组件库，就有了组件管理器。
 
-如果用学过node，那我们可以把组件管理器比作npm包管理器，把`idf_component.yml`比作`package.jso`,真的一模一样。(不知道node，npm当我没说)。
+> 如果用学过node.js，那我们可以把组件管理器比作npm包管理器，把`idf_component.yml`比作`package.js`,真的一模一样。
 
-我们可以在这：[ ESP-IDF components](https://components.espressif.com)  找到乐鑫发布的一些他们帮我们写好的”自定义组件“。
+我们可以在这：[ ESP-IDF components](https://components.espressif.com)  找到乐鑫或者第三方发布的一些他们帮我们写好的”自定义组件“。
 
-使用这些组件我们可以快速的完成一些功能的实现，比如移植还有点难度的LVGL库，现在只要一行命令就能移植完成。
+使用这些组件我们可以快速的完成一些功能的实现，比如移植还有点难度的LVGL库，现在只要几行命令，加上简单的配置就能移植完成。
 
 ![](attachments/20240219001357.png)
 
 
 ## 二、组件管理器使用示例：
 
-下面我们基于[ESP-IDF自定义组件](../2.3-ESP-IDF自定义组件/ESP-IDF自定义组件.md)教程中编写的[blink_component](https://github.com/DuRuofu/ESP32_Learning/tree/master/02.idf_basis/blink_component)工程来实现使用一下官方的组件管理器，复制工程，重命名为`button_component`
+下面我们基于[ESP-IDF自定义组件](../2.3-ESP-IDF自定义组件/ESP-IDF自定义组件.md)教程中编写的[blink_component](https://github.com/DuRuofu/ESP32-Guide-Code/tree/master/02.idf_basic/03/blink_component)工程来实现使用一下官方的组件管理器，复制工程，重命名为`button_blink`
 
 ### 2.1 组件介绍
 
@@ -123,7 +123,6 @@ iot_button_register_cb(gpio_btn, BUTTON_SINGLE_CLICK, button_single_click_cb,NUL
 结合上一篇教程的LED闪烁的代码，最终代码如下：`blink_example_main.c`
 
 ``` c
-
 #include <stdio.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"

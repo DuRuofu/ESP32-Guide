@@ -1,13 +1,9 @@
-ESP-IDF 使用基于 kconfiglib 的 esp-idf-kconfig 包，而 kconfiglib 是 Kconfig 系统的 Python 扩展。Kconfig 提供了编译时的项目配置机制，以及多种类型的配置选项（如整数、字符串和布尔值等）。Kconfig 文件指定了选项之间的依赖关系、默认值、组合方式等。
-
-应用程序开发人员可以通过 idf.py menuconfig 构建目标，在终端中打开项目配置菜单。
-
 关于项目配置部分的文档，可以参考：[ API 参考 » 项目配置](https://docs.espressif.com/projects/esp-idf/zh_CN/v5.3.2/esp32/api-reference/kconfig.html)
 
 首先我们先借助一个具体的例子来解释Menuconfig命令的使用和Kconfig文件的作用。
 # 一、Menuconfig的使用
 
-打开示例工程：esp-idf/examples/get-started/blink
+打开示例工程：`esp-idf/examples/get-started/blink`
 
 这个历程是用来实现LED闪烁的程序，这个工程使用了一个叫`led_strip`的组件，所以代码稍显复杂，但这并不重要，我们的重点不再这里，只要知道这个项目可以点亮开发板上的一颗LED灯即可。
 
@@ -130,7 +126,6 @@ menu "Example Configuration"
 endmenu
 ```
 
-
 不难发现，下面这部分就和我们刚才见到的配置项有关：
 
 ``` 
@@ -154,7 +149,7 @@ endmenu
 
 ```
 
-即使不了解 Kconfig 的具体语法，我们也能猜出这几行代码干了啥： 定义了两个配置项，`BLINK_GPIO` 和 `BLINK_PERIOD` ,  然后添加默认值，添加说明等,具体每行都是什么意思可以请教强大的AI这里就不作解释了。
+即使不了解 Kconfig 的具体语法，我们也能猜出这几行代码干了啥： 定义了两个配置项，`BLINK_GPIO` 和 `BLINK_PERIOD` ,  然后添加默认值，添加说明等,具体每行都是什么意思可以请教强大的AI，AI可以解释的很清楚，我这里就不作解释了。
 
 通过官方文档我们可以知道：
 
@@ -182,7 +177,7 @@ endmenu
 
 ![](attachments/20240218221414.png)
 
-我们删除原有的 `Kconfig.projbuild` 文件，自己重新写一个，原来的`Kconfig.projbuild`里有三个配置项：分别是：
+我们删除原有的 `Kconfig.projbuild` 文件，自己重新写一个，原来的`Kconfig.projbuild`里有三个主要的配置项：分别是：
 
 - `BLINK_LED`: 控制LED模式（选项）
 - `BLINK_GPIO`：LED连接的引脚
@@ -262,7 +257,7 @@ endmenu
 其中`Kconfig` 和 `Kconfig.projbuild` 文件用于定义菜单，其余各种`“sdkconfig”`文件用于保存我们配置的值。
 
 
-先分别概括这几个文件的作用分别是什么：
+先分别概括这几个`“sdkconfig”`文件的作用分别是什么：
 
 | 文件名                                | 位置    | 作用                                                                                           | 概述   |
 | ---------------------------------- | ----- | -------------------------------------------------------------------------------------------- | ---- |

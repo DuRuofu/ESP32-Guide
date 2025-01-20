@@ -122,44 +122,45 @@
 
 - 在线文字教程：[ESP32初体验-idf.py的基本使用.md](docs/01.认识ESP32/1.3-初试ESP32-idf.py的基本使用/idf.py的基本使用.md)
 - 在线视频教程：[ESP32初体验-idf.py的基本使用](https://www.bilibili.com/video/BV1VLrSY3E15?spm_id_from=333.788.videopod.sections&vd_source=ef5a0ab0106372751602034cdd9ab98e)
+- 教程配套代码：[hello_world](https://github.com/DuRuofu/ESP32-Guide-Code/tree/master/01.start/hello_world)
 
 ---
 
 # 二、IDF基础与工具使用
 
-> 目标：熟悉ESP-IDF的架构与开发流程，掌握常用开发工具及调试方法，建立高效开发基础。  
+> 目标：熟悉ESP-IDF的架构与开发流程，掌握常用开发工具及调试方法，建立高效开发基础。 
 
-## 2.1 ESP32工程结构及构建
+## 2.1 ESP32工程结构
 
 本节详细介绍ESP-IDF项目的基本目录结构，包括CMake工具的基础知识，帮助读者掌握ESP32工程的整体组织方式，为日后开发复杂项目奠定基础。  
 
-- 在线文字教程：[ESP32工程结构及构建.md](docs/02.ESP-IDF基础/2.1-ESP32工程结构及构建/ESP32工程结构.md)
-- 在线视频教程：[ESP32工程结构及构建]  
-- 教程配套代码：[基础工程模板](#)  
+- 在线文字教程：[ESP32工程结构.md](docs/02.ESP-IDF基础/2.1-ESP32工程结构/ESP-IDF的工程结构.md)
+- 在线视频教程：[ESP32工程结构](https://www.bilibili.com/video/BV1CfrzYcEkK/?spm_id_from=333.1387.homepage.video_card.click&vd_source=ef5a0ab0106372751602034cdd9ab98e)
+- 教程配套代码：[基础工程模板代码](https://github.com/DuRuofu/ESP32-Guide-Code/tree/master/02.idf_basic/01/sample_project)  
 
 ## 2.2 ESP-IDF项目配置
 
 本节将重点讲解如何使用`menuconfig`工具配置项目，包含常见的配置选项及其实际用途。通过本节学习，读者可以根据项目需求快速定制和优化ESP32项目配置。  
 
-- 在线文字教程：[ESP-IDF项目配置.md](docs/02.ESP-IDF基础/2.2-ESP-IDF项目配置/ESP-IDF项目配置.md)  
+- 在线文字教程：[ESP-IDF项目配置.md](docs/02.ESP-IDF基础/2.2-ESP-IDF项目配置/ESP-IDF项目配置.md)
 - 在线视频教程：[ESP-IDF项目配置详解]  
-- 教程配套代码：[项目配置示例代码](#)  
+- 教程配套代码：[项目配置示例代码](https://github.com/DuRuofu/ESP32-Guide-Code/tree/master/02.idf_basic/02)  
 
 ## 2.3 ESP-IDF自定义组件
 
 本节讲解如何创建和管理ESP-IDF的自定义组件，包括组件的目录结构、声明与调用方法，以及组件的复用和共享技巧，帮助读者构建模块化项目。  
 
 - 在线文字教程：[ESP-IDF自定义组件.md](docs/02.ESP-IDF基础/2.3-ESP-IDF自定义组件/ESP-IDF自定义组件.md)
-- 在线视频教程：[ESP-IDF自定义组件开发详解]  
-- 教程配套代码：[组件示例代码](#)  
+- 在线视频教程：[ESP-IDF自定义组件开发详解]
+- 教程配套代码：[组件示例代码](https://github.com/DuRuofu/ESP32-Guide-Code/tree/master/02.idf_basic/03/blink_component)
 
 ## 2.4 ESP-IDF组件管理器
 
 本节重点介绍ESP-IDF组件管理器的功能与使用方法，涵盖如何通过组件管理器导入外部库、配置组件依赖，使用官方提供的外部组件。
 
 - 在线文字教程：[ESP-IDF组件管理器.md](docs/02.ESP-IDF基础/2.4-ESP-IDF组件管理器/ESP-IDF组件管理器.md)  
-- 在线视频教程：[ESP-IDF组件管理器详解]  
-- 教程配套代码：[组件管理器示例代码](#)  
+- 在线视频教程：[ESP-IDF组件管理器详解]
+- 教程配套代码：[组件管理器示例代码](https://github.com/DuRuofu/ESP32-Guide-Code/tree/master/02.idf_basic/04/button_blink)
 
 ---
 
