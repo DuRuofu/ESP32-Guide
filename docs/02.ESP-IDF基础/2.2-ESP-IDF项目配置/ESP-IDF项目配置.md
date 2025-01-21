@@ -11,13 +11,13 @@
 
 那么该如何修改代码里对应控制LED的GPIO引脚号呢，不妨回到代码看看：
 
-![](attachments/Pasted%20image%2020250119165327.png)
+![](attachments/20250119165327.png)
 
 可以看到代码里LED对应的GPIO引脚的编号是由`BLINK_GPIO`这个宏充当的，而`BLINK_GPIO`这个宏又指向`CONFIG_BLINK_GPIO`这个宏，我们当然可以直接把`CONFIG_BLINK_GPIO`替换为我们实际的引脚号，来达到我们要点亮LED灯的目的，但这不是本节教程的主要矛盾。本节的关键是搞明白`CONFIG_BLINK_GPIO`这个宏是哪来的，为什么要用它，怎末用它，怎末修改它的值来点亮LED。
 
 我们右键跳转到`CONFIG_BLINK_GPIO`宏定义的位置，可以发现：
 
-![](attachments/Pasted%20image%2020250119170214.png)
+![](attachments/20250119170214.png)
 
 `CONFIG_BLINK_GPIO`宏定义在` sdkconfig.h` 文件里，而` sdkconfig.h` 文件又位于`build`目录下，那我们可以直接修改这里的宏定义值吗，答案是不可以，`build`目录是构建编译项目产生的，每次编译项目里面的文件就会重新生成，修改了也会被覆盖掉。那` sdkconfig.h`里的宏定义又是从何而来的呢？官方文档是这样描述的：
 
@@ -26,7 +26,7 @@
 
 所以`sdkconfig.h`里的宏定义源自于`sdkconfig`文件，在`sdkconfig`文件中搜索`CONFIG_BLINK_GPIO`宏定义：
 
-![](attachments/Pasted%20image%2020250119170952.png)
+![](attachments/20250119170952.png)
 
 的确可以找到，那么可以通过修改这里的值来修改程序里的引脚定义吗，的确可以，但是不推荐，ESP-IDF框架为我们提供了更加优雅的配置方式，那就是`Menuconfig`配置菜单（终于引入正题）：
 
@@ -53,11 +53,11 @@
 -----
 补充：如果使用esp-idf插件打开`menuconfig`,只需要点击对应的快捷键（小齿轮）
 
-![](attachments/Pasted%20image%2020250119171914.png)
+![](attachments/20250119171914.png)
 
 也可以加载出`menuconfig`菜单，如下：
 
-![](attachments/Pasted%20image%2020250119172121.png)
+![](attachments/20250119172121.png)
 
 
 只是形式与命令行略有不同，但配置项内容都是一样的，特在此补充说明。

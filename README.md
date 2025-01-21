@@ -44,10 +44,10 @@
 | 一、认识ESP32      | 1.1 ESP32介绍          |  ✔   |  ✔   |  无   | 2025/1/3   |
 | 一、认识ESP32      | 1.2 ESP32开发环境搭建      |  ✔   | ✔✔✔  |  无   | 2025/1/4-6 |
 | 一、认识ESP32      | 1.3 idf.py的基本使用      |  ✔   |  ✔   |  无   | 2025/1/7   |
-| 二、IDF基础与工具使用   | 2.1 ESP32工程结构及构建     |  ✔   |      |      |            |
-| 二、IDF基础与工具使用   | 2.2 ESP-IDF项目配置      |  ✔   |      |      |            |
-| 二、IDF基础与工具使用   | 2.3 ESP-IDF自定义组件     |  ✔   |      |      |            |
-| 二、IDF基础与工具使用   | 2.4 ESP-IDF组件管理器     |  ✔   |      |      |            |
+| 二、IDF基础与工具使用   | 2.1 ESP32工程结构及构建     |  ✔   |  ✔   |  ✔   | 2025/1/9   |
+| 二、IDF基础与工具使用   | 2.2 ESP-IDF项目配置      |  ✔   |  ✔   |  ✔   | 2025/1/21  |
+| 二、IDF基础与工具使用   | 2.3 ESP-IDF自定义组件     |  ✔   |      |  ✔   |            |
+| 二、IDF基础与工具使用   | 2.4 ESP-IDF组件管理器     |  ✔   |      |  ✔   |            |
 | 三、FreeRTOS基础   | 3.1 FreeRTOS概述       |      |      |      |            |
 | 三、FreeRTOS基础   | 3.2 FreeRTOS多任务与任务管理 |      |      |      |            |
 | 三、FreeRTOS基础   | 3.3 FreeRTOS任务看门狗    |      |      |      |            |
@@ -143,7 +143,7 @@
 本节将重点讲解如何使用`menuconfig`工具配置项目，包含常见的配置选项及其实际用途。通过本节学习，读者可以根据项目需求快速定制和优化ESP32项目配置。  
 
 - 在线文字教程：[ESP-IDF项目配置.md](docs/02.ESP-IDF基础/2.2-ESP-IDF项目配置/ESP-IDF项目配置.md)
-- 在线视频教程：[ESP-IDF项目配置详解]  
+- 在线视频教程：[ESP-IDF项目配置详解](https://www.bilibili.com/video/BV15xwbeiEnD/)
 - 教程配套代码：[项目配置示例代码](https://github.com/DuRuofu/ESP32-Guide-Code/tree/master/02.idf_basic/02)  
 
 ## 2.3 ESP-IDF自定义组件
