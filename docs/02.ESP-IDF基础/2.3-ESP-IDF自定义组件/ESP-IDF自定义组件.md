@@ -47,7 +47,6 @@
 			 - led_blink.c
 			 - include/ 
 					 - led_blink.h
-
 ```
 
 将点灯的函数定义裁剪到 `led_blink.c`
@@ -85,20 +84,22 @@ void configure_led(void)
 #define LED_BLINK_H
 
 #ifdef __cplusplus
-extern "C" {
+extern "C"
+{
 #endif
 
 #include <stdint.h>
 
-// Function declarations
-void blink_led(int s_led_state);
-void configure_led(void);
+	// Function declarations
+	void blink_led(uint8_t s_led_state);
+	void configure_led(void);
 
 #ifdef __cplusplus
 }
 #endif
 
 #endif /* LED_BLINK_H */
+
 
 ```
 
@@ -181,3 +182,4 @@ void app_main(void)
 # 参考链接
 
 1. https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/api-guides/build-system.html
+2. https://developer.espressif.com/blog/2024/12/how-to-create-an-esp-idf-component/

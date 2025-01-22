@@ -46,12 +46,12 @@
 | 一、认识ESP32      | 1.3 idf.py的基本使用      |  ✔   |  ✔   |  无   | 2025/1/7   |
 | 二、IDF基础与工具使用   | 2.1 ESP32工程结构及构建     |  ✔   |  ✔   |  ✔   | 2025/1/9   |
 | 二、IDF基础与工具使用   | 2.2 ESP-IDF项目配置      |  ✔   |  ✔   |  ✔   | 2025/1/21  |
-| 二、IDF基础与工具使用   | 2.3 ESP-IDF自定义组件     |  ✔   |      |  ✔   |            |
-| 二、IDF基础与工具使用   | 2.4 ESP-IDF组件管理器     |  ✔   |      |  ✔   |            |
-| 三、FreeRTOS基础   | 3.1 FreeRTOS概述       |      |      |      |            |
-| 三、FreeRTOS基础   | 3.2 FreeRTOS多任务与任务管理 |      |      |      |            |
-| 三、FreeRTOS基础   | 3.3 FreeRTOS任务看门狗    |      |      |      |            |
-| 四、外设学习         | 4.1.1 GPIO入门         |      |      |      |            |
+| 二、IDF基础与工具使用   | 2.3 ESP-IDF自定义组件     |  ✔   |  ✔   |  ✔   | 2025/1/22  |
+| 二、IDF基础与工具使用   | 2.4 ESP-IDF组件管理器     |  ✔   |  ⏳   |  ✔   |            |
+| 三、FreeRTOS基础   | 3.1 FreeRTOS概述       |  ⏳   |      |  无   |            |
+| 三、FreeRTOS基础   | 3.2 FreeRTOS多任务与任务管理 |  ⏳   |      |      |            |
+| 三、FreeRTOS基础   | 3.3 FreeRTOS任务看门狗    |  ⏳   |      |      |            |
+| 四、外设学习         | 4.1.1 GPIO入门         |  ⏳   |      |      |            |
 | 四、外设学习         | 4.1.2 UART串口通信       |      |      |      |            |
 | 四、外设学习         | 4.1.3 硬件定时器          |      |      |      |            |
 | 四、外设学习         | 4.1.4 ADC模数转换        |      |      |      |            |
@@ -87,7 +87,6 @@
 ![](attachments/最小系统开发板.png)
 
 至于LVGL，特殊外设，实战演练部分，会在教程章节单独推荐开发板。
-
 
 
 ## 常见问题及解决方案：
@@ -151,7 +150,7 @@
 本节讲解如何创建和管理ESP-IDF的自定义组件，包括组件的目录结构、声明与调用方法，以及组件的复用和共享技巧，帮助读者构建模块化项目。  
 
 - 在线文字教程：[ESP-IDF自定义组件.md](docs/02.ESP-IDF基础/2.3-ESP-IDF自定义组件/ESP-IDF自定义组件.md)
-- 在线视频教程：[ESP-IDF自定义组件开发详解]
+- 在线视频教程：[ESP-IDF自定义组件](https://www.bilibili.com/video/BV182ftYHEox/?spm_id_from=333.1387.upload.video_card.click&vd_source=ef5a0ab0106372751602034cdd9ab98e)
 - 教程配套代码：[组件示例代码](https://github.com/DuRuofu/ESP32-Guide-Code/tree/master/02.idf_basic/03/blink_component)
 
 ## 2.4 ESP-IDF组件管理器
@@ -159,7 +158,7 @@
 本节重点介绍ESP-IDF组件管理器的功能与使用方法，涵盖如何通过组件管理器导入外部库、配置组件依赖，使用官方提供的外部组件。
 
 - 在线文字教程：[ESP-IDF组件管理器.md](docs/02.ESP-IDF基础/2.4-ESP-IDF组件管理器/ESP-IDF组件管理器.md)  
-- 在线视频教程：[ESP-IDF组件管理器详解]
+- 在线视频教程：[ESP-IDF组件管理器详解]()
 - 教程配套代码：[组件管理器示例代码](https://github.com/DuRuofu/ESP32-Guide-Code/tree/master/02.idf_basic/04/button_blink)
 
 ---
@@ -168,13 +167,12 @@
 
 > 目标：学习FreeRTOS的核心概念与基本功能，掌握任务管理与调度机制，为实时系统开发打下基础。  
 
-## 3.1 FreeRTOS介绍于引入
+## 3.1 FreeRTOS介绍与引入
 
 本节将介绍FreeRTOS的核心概念，包括实时操作系统的特点、FreeRTOS的基本架构和设计思想，以及其在嵌入式开发中的应用场景，帮助读者快速了解FreeRTOS的基础知识。  
 
 > 在线文字教程：[FreeRTOS概述.md](./docs/03.FreeRTOS基础/3.1-FreeRTOS概述/FreeRTOS概述.md)
 > 在线视频教程：[FreeRTOS概述讲解]
-> 教程配套代码：[FreeRTOS初体验示例代码](#)  
 
 ## 3.2 FreeRTOS多任务与任务管理  
 
@@ -206,7 +204,7 @@
 本节介绍GPIO（通用输入输出）的基本功能，包括输入、输出及中断操作。通过实际案例，学习如何控制外部设备并响应硬件信号。  
 
 > 在线文字教程：[GPIO入门](./docs/04.外设学习/4.1-基础外设/4.1.1-GPIO/GPIO入门.md)  
-> 在线视频教程：[GPIO开发详解]  
+> 在线视频教程：[GPIO开发详解]()
 > 教程配套代码：[GPIO示例代码](#)  
 
 ### 4.1.2 UART  
