@@ -1,17 +1,4 @@
 
-### 说明：
-
-1. 本文档由DuRuofu撰写，由DuRuofu负责解释及执行。
-2. 本文档记录使用ESP-ID的FSD/SDIO/MMC 驱动来使用SD卡。
-
-### 修订历史：
-
-| 文档名称                   | 版本     | 作者      | 时间         | 备注   |
-| ---------------------- | ------ | ------- | ---------- | ---- |
-| ESP32存储-SD、SDIO、MMC 驱动 | v1.0.0 | DuRuofu | 2024-04-11 | 首次建立 |
-
-<div STYLE="page-break-after: always;"></div>
-
 # ESP32存储-SD、SDIO、MMC 驱动
 
 ## 一、基本概念
