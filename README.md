@@ -1,4 +1,3 @@
-This work is licensed under [CC BY-NC 4.0 ](https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1)
 
 ### 前言：
 
@@ -48,31 +47,31 @@ This work is licensed under [CC BY-NC 4.0 ](https://creativecommons.org/licenses
 | 二、IDF基础与工具使用   | 2.1 ESP32工程结构及构建     |  ✔   |  ✔   |  ✔   | 2025/1/9   |
 | 二、IDF基础与工具使用   | 2.2 ESP-IDF项目配置      |  ✔   |  ✔   |  ✔   | 2025/1/21  |
 | 二、IDF基础与工具使用   | 2.3 ESP-IDF自定义组件     |  ✔   |  ✔   |  ✔   | 2025/1/22  |
-| 二、IDF基础与工具使用   | 2.4 ESP-IDF组件管理器     |  ✔   |  ⏳   |  ✔   |            |
-| 三、FreeRTOS基础   | 3.1 FreeRTOS概述       |  ⏳   |      |  无   |            |
+| 二、IDF基础与工具使用   | 2.4 ESP-IDF组件管理器     |  ✔   |  ✔   |  ✔   | 2025/1/24  |
+| 三、FreeRTOS基础   | 3.1 FreeRTOS概述       |  ⏳   |  ⏳   |  无   |            |
 | 三、FreeRTOS基础   | 3.2 FreeRTOS多任务与任务管理 |  ⏳   |      |      |            |
 | 三、FreeRTOS基础   | 3.3 FreeRTOS任务看门狗    |  ⏳   |      |      |            |
 | 四、外设学习         | 4.1.1 GPIO入门         |  ⏳   |      |      |            |
-| 四、外设学习         | 4.1.2 UART串口通信       |      |      |      |            |
-| 四、外设学习         | 4.1.3 硬件定时器          |      |      |      |            |
-| 四、外设学习         | 4.1.4 ADC模数转换        |      |      |      |            |
-| 四、外设学习         | 4.1.5 DAC数模转换        |      |      |      |            |
-| 四、外设学习         | 4.1.6 LED PWM控制      |      |      |      |            |
-| 四、外设学习         | 4.1.7 I2C通信          |      |      |      |            |
-| 四、外设学习         | 4.1.8 SPI通信          |      |      |      |            |
-| 四、外设学习         | 4.2.1 分区表设计          |      |      |      |            |
-| 四、外设学习         | 4.2.2 非易失性存储         |      |      |      |            |
-| 四、外设学习         | 4.2.3 FAT文件系统        |      |      |      |            |
-| 四、外设学习         | 4.2.4 SPIFFS文件系统     |      |      |      |            |
-| 五、FreeRTOS进阶   | 5.1 FreeRTOS队列使用教程   |      |      |      |            |
-| 五、FreeRTOS进阶   | 5.2 FreeRTOS信号量教程    |      |      |      |            |
-| 五、FreeRTOS进阶   | 5.3 FreeRTOS互斥量教程    |      |      |      |            |
-| 五、FreeRTOS进阶   | 5.4 FreeRTOS事件组教程    |      |      |      |            |
-| 五、FreeRTOS进阶   | 5.5 FreeRTOS任务通知教程   |      |      |      |            |
-| 五、FreeRTOS进阶   | 5.6 FreeRTOS软件定时器教程  |      |      |      |            |
-| 六、Wi-Fi功能与相关协议 | 6.1.1 Wi-Fi模式与基础操作   |      |      |      |            |
-| 六、Wi-Fi功能与相关协议 | 6.1.2 Wi-Fi STA与AP配置 |      |      |      |            |
-| 六、Wi-Fi功能与相关协议 | 6.2.1 TCP协议应用        |      |      |      |            |
+| 四、外设学习         | 4.1.2 UART串口通信       |  ⏳   |      |      |            |
+| 四、外设学习         | 4.1.3 硬件定时器          |  ⏳   |      |      |            |
+| 四、外设学习         | 4.1.4 ADC模数转换        |  ⏳   |      |      |            |
+| 四、外设学习         | 4.1.5 DAC数模转换        |  ⏳   |      |      |            |
+| 四、外设学习         | 4.1.6 LED PWM控制      |  ⏳   |      |      |            |
+| 四、外设学习         | 4.1.7 I2C通信          |  ⏳   |      |      |            |
+| 四、外设学习         | 4.1.8 SPI通信          |  ⏳   |      |      |            |
+| 四、外设学习         | 4.2.1 分区表设计          |  ⏳   |      |      |            |
+| 四、外设学习         | 4.2.2 非易失性存储         |  ⏳   |      |      |            |
+| 四、外设学习         | 4.2.3 FAT文件系统        |  ⏳   |      |      |            |
+| 四、外设学习         | 4.2.4 SPIFFS文件系统     |  ⏳   |      |      |            |
+| 五、FreeRTOS进阶   | 5.1 FreeRTOS队列使用教程   |  ⏳   |      |      |            |
+| 五、FreeRTOS进阶   | 5.2 FreeRTOS信号量教程    |  ⏳   |      |      |            |
+| 五、FreeRTOS进阶   | 5.3 FreeRTOS互斥量教程    |  ⏳   |      |      |            |
+| 五、FreeRTOS进阶   | 5.4 FreeRTOS事件组教程    |  ⏳   |      |      |            |
+| 五、FreeRTOS进阶   | 5.5 FreeRTOS任务通知教程   |  ⏳   |      |      |            |
+| 五、FreeRTOS进阶   | 5.6 FreeRTOS软件定时器教程  |  ⏳   |      |      |            |
+| 六、Wi-Fi功能与相关协议 | 6.1.1 Wi-Fi模式与基础操作   |  ⏳   |      |      |            |
+| 六、Wi-Fi功能与相关协议 | 6.1.2 Wi-Fi STA与AP配置 |  ⏳   |      |      |            |
+| 六、Wi-Fi功能与相关协议 | 6.2.1 TCP协议应用        |  ⏳   |      |      |            |
 | 六、Wi-Fi功能与相关协议 | 6.2.2 UDP协议应用        |      |      |      |            |
 
 <div STYLE="page-break-after: always;"></div>
@@ -96,7 +95,7 @@ This work is licensed under [CC BY-NC 4.0 ](https://creativecommons.org/licenses
 
 > 常见问题及解决方案：[常见问题及解决方案.md](docs/00.常见问题及解决方案/常见问题及解决方案.md)
 
-# 一、认识ESP32  
+# 一、认识ESP32  （完结）
 
 > 目标：学会安装ESP-IDF开发环境，并使用其烧录代码，掌握ESP32的基本特点及工具使用。  
 
@@ -126,7 +125,7 @@ This work is licensed under [CC BY-NC 4.0 ](https://creativecommons.org/licenses
 
 ---
 
-# 二、IDF基础与工具使用
+# 二、IDF基础与工具使用  （完结）
 
 > 目标：熟悉ESP-IDF的架构与开发流程，掌握常用开发工具及调试方法，建立高效开发基础。 
 
@@ -158,13 +157,13 @@ This work is licensed under [CC BY-NC 4.0 ](https://creativecommons.org/licenses
 
 本节重点介绍ESP-IDF组件管理器的功能与使用方法，涵盖如何通过组件管理器导入外部库、配置组件依赖，使用官方提供的外部组件。
 
-- 在线文字教程：[ESP-IDF组件管理器.md](docs/02.ESP-IDF基础/2.4-ESP-IDF组件管理器/ESP-IDF组件管理器.md)  
-- 在线视频教程：[ESP-IDF组件管理器详解]()
+- 在线文字教程：[ESP-IDF组件管理器.md](docs/02.ESP-IDF基础/2.4-ESP-IDF组件管理器/ESP-IDF组件管理器.md)
+- 在线视频教程：[ESP-IDF组件管理器详解](https://www.bilibili.com/video/BV1etfHYgE6M/)
 - 教程配套代码：[组件管理器示例代码](https://github.com/DuRuofu/ESP32-Guide-Code/tree/master/02.idf_basic/04/button_blink)
 
 ---
 
-# 三、FreeRTOS基础
+# 三、FreeRTOS基础（更新中）
 
 > 目标：学习FreeRTOS的核心概念与基本功能，掌握任务管理与调度机制，为实时系统开发打下基础。  
 
@@ -194,7 +193,7 @@ This work is licensed under [CC BY-NC 4.0 ](https://creativecommons.org/licenses
 
 ---
 
-# 四、外设学习  
+# 四、外设学习  （更新中）
 
 > 目标：掌握ESP32常用外设的基本操作方法，学会与硬件交互并控制外设设备。  
 
@@ -316,7 +315,7 @@ This work is licensed under [CC BY-NC 4.0 ](https://creativecommons.org/licenses
 
 ---
 
-# 五、FreeRTOS进阶  
+# 五、FreeRTOS进阶  （更新中）
 
 > 目标：学习FreeRTOS任务间通信与系统优化技术，为后续高级外设的使用打下基础。  
 
@@ -371,7 +370,7 @@ This work is licensed under [CC BY-NC 4.0 ](https://creativecommons.org/licenses
 
 ---
 
-# 六、Wi-Fi功能与相关协议  
+# 六、Wi-Fi功能与相关协议  （更新中）
 
 > 目标：学会使用ESP32的Wi-Fi功能，实现无线网络连接及常见通信协议的应用开发。  
 
@@ -455,7 +454,7 @@ This work is licensed under [CC BY-NC 4.0 ](https://creativecommons.org/licenses
 
 ---
 
-# 七、蓝牙功能与相关协议  
+# 七、蓝牙功能与相关协议  （更新中）
 
 > 目标：掌握ESP32蓝牙功能的配置与使用，实现蓝牙低功耗和经典蓝牙的通信功能。  
 
@@ -476,7 +475,7 @@ This work is licensed under [CC BY-NC 4.0 ](https://creativecommons.org/licenses
 
 ---
 
-# 八、图形界面开发  
+# 八、图形界面开发  （更新中）
 
 > 目标：学习LVGL图形库的基础知识，掌握图形界面开发的核心方法，设计简单的GUI界面。  
 
@@ -534,3 +533,8 @@ ESP-IDF:
 
 - 查询可用串口:`ls /dev/ttyUSB*`
 - 添加串口权限(需重启)：`sudo usermod -aG dialout username`
+
+
+# License
+
+The texts, code, images,, and videos in this repository are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).

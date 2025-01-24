@@ -180,3 +180,4 @@ void app_main(void)
 # 参考链接
 
 1. https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/api-guides/tools/idf-component-manager.html
+2. https://components.espressif.com/components/espressif/button/versions/3.5.0?language=en
