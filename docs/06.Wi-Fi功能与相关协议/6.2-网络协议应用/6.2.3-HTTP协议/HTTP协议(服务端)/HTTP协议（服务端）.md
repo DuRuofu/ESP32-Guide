@@ -197,15 +197,15 @@ static esp_err_t hello_get_handler(httpd_req_t *req)
 
 >代码很多，但实际并不复杂运行效果如下：
 
-![](attachments/Pasted%20image%2020240325174743.png)
+![](attachments/20240325174743.png)
 
-![](attachments/Pasted%20image%2020240325174900.png)
+![](attachments/20240325174900.png)
 
 get参数解析：
 
-![](attachments/Pasted%20image%2020240325175024.png)
+![](attachments/20240325175024.png)
 
-![](attachments/Pasted%20image%2020240325175043.png)
+![](attachments/20240325175043.png)
 
 
 我们还可以使用get返回一个网页，用于数据交互：
@@ -266,12 +266,12 @@ static esp_err_t html_get_handler(httpd_req_t *req)
 
 访问效果如图所示：
 
-![](attachments/Pasted%20image%2020240326085636.png)
+![](attachments/20240326085636.png)
 
 #### POST方法
 
 我们接着刚才写好的表单，发起一个psot请求
-![](attachments/Pasted%20image%2020240326090740.png)
+![](attachments/20240326090740.png)
 
 这里的URL的IP需要填写自己ESP32联网分配到的IP。这样我们点击提交表单就可以直接发起POST请求。
 
@@ -335,18 +335,18 @@ static esp_err_t echo_post_handler(httpd_req_t *req)
 
 在表单填写内容：
 
-![](attachments/Pasted%20image%2020240326091157.png)
+![](attachments/20240326091157.png)
 
 提交：
 
-![](attachments/Pasted%20image%2020240326091216.png)
+![](attachments/20240326091216.png)
 
 数据回显，POST请求验证完成。
 
 >PS：如果出现下面的报错：Header fields are too long
->![](attachments/Pasted%20image%2020240326091539.png)
+>![](attachments/20240326091539.png)
 >需要在配置文件里修改：
->![](attachments/Pasted%20image%2020240326091652.png)
+>![](attachments/20240326091652.png)
 
 #### PUT方法
 
@@ -422,18 +422,18 @@ xhr.open("PUT","http://192.168.137.55/ctrl"，true);
 xhr.send("0");
 ```
 
-![](attachments/Pasted%20image%2020240326094235.png)
+![](attachments/20240326094235.png)
 
-![](attachments/Pasted%20image%2020240326094304.png)
+![](attachments/20240326094304.png)
 
 
 这时hello路由就被取消注册了：
 
-![](attachments/Pasted%20image%2020240326094552.png)
+![](attachments/20240326094552.png)
 
 
 发送1，hello被重新注册：
-![](attachments/Pasted%20image%2020240326094621.png)
+![](attachments/20240326094621.png)
 
 
 ### 三、停止服务器，释放资源
