@@ -1,10 +1,16 @@
+# ESP32项目工程结构
+
+> [!NOTE]
+> 对应视频教程：https://www.bilibili.com/video/BV1CfrzYcEkK <br/>
+> 对应示例代码：[sample_project](https://github.com/DuRuofu/ESP32-Guide-Code/tree/master/02.idf_basic/01/sample_project)
+## 介绍
 
 ESP-IDF 的项目工程与 Keil 的传统工程模式有显著不同。Keil 工程通常依赖于特定的项目文件格式（如 .uvprojx 或 .uvoptx），这些文件记录了项目的结构、配置和依赖，且需要通过 Keil 软件进行管理和编译。而 ESP-IDF 则采用更灵活的构建方式，ESP-IDF 的项目只是一个特定的文件夹，其中包含了构建可执行应用程序所需的全部文件和配置，以及其他支持型文件，例如分区表、数据/文件系统分区和引导程序。这些文件描述了项目的源码路径、依赖关系和编译选项，而不是依赖于 IDE 专属的配置格式。这样可以方便地在不同的开发环境中切换。
 
 关于ESP-IDF工程结构可以参考官方文档：[示例项目](https://docs.espressif.com/projects/esp-idf/zh_CN/v5.3.2/esp32/api-guides/build-system.html#example-project-structure)
 
 这部分没有什么新的东西，只是需要明白ESP-IDF所规定的项目框架，下面的内容都提炼自官方文档，大家也可以直接前往官方文档查看。
-### 项目目录
+## 项目目录
 
 esp-idf的标准目录如下所示：
 
@@ -88,6 +94,6 @@ idf_component_register(SRCS "my_component.c"
 - `REQUIRES` 声明组件的public依赖，可供其他依赖者访问
 - `PRIV_REQUIRES`声明private依赖，只能被当前组件访问。
 
-# 参考链接
+## 参考链接
 
 1. https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/api-guides/build-system.html

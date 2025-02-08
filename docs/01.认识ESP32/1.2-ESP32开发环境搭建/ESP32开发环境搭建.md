@@ -1,6 +1,12 @@
-# 一、Windows系统
+# ESP32开发环境搭建
 
-## 1.1 使用VS Code插件直接安装
+> [!NOTE]
+> 对应视频教程-1：https://www.bilibili.com/video/BV14o62YQEBC <br/>
+> 对应视频教程-2：https://www.bilibili.com/video/BV1vLrKYHExy <br/>
+> 对应视频教程-3：https://www.bilibili.com/video/BV1s2rGYsE4V <br/>
+## 一、Windows系统
+
+### 1.1 使用VS Code插件直接安装
 
 在Windows系统下使用VS Code插件直接安装ESP-IDF可以参考官方文档：[Install ESP-IDF and Tools](https://docs.espressif.com/projects/vscode-esp-idf-extension/zh_CN/latest/installation.html)，下面介绍安装过程：
 
@@ -65,7 +71,7 @@ VS Code会自动打开项目目录，如下：
 
 至于进一步烧录代码至开发板，将在下一节介绍。
 
-## 1.2 手动安装
+### 1.2 手动安装
 
 Windows系统下手动安装可以参考官方文档：[Windows 平台工具链的标准设置](https://docs.espressif.com/projects/esp-idf/zh_CN/stable/esp32/get-started/windows-setup.html#),下面简单介绍安装过程：
 
@@ -136,29 +142,29 @@ Windows系统下手动安装可以参考官方文档：[Windows 平台工具链�
 ![](attachments/20241230204358.png)
 
 
-# 二、Linux系统
+## 二、Linux系统
 
-## 2.1 使用VS Code插件直接安装
+### 2.1 使用VS Code插件直接安装
 
 这种安装方法和1.1介绍的Windows下使用VS Code插件直接安装没有太大区别，参考1.1部分和官方文档中针对Linux系统的提示即可，这里就不展开描述了。
 
 建议直接参考官方文档：[Install ESP-IDF and Tools](https://docs.espressif.com/projects/vscode-esp-idf-extension/zh_CN/latest/installation.html)进行安装，但相比于在Linux下使用VS code安装，笔者更建议直接手动安装。
 
-## 2.2 手动安装
+### 2.2 手动安装
 
 Linux系统下使用ESP-IDF更推荐手动安装，因为Linux系统下我们使用更多的是命令行，VS Code插件提供的可视化操作可有可无。
 
 这部分同样可以优先参考官方文档：[Linux 和 macOS 平台工具链的标准设置](https://docs.espressif.com/projects/esp-idf/zh_CN/stable/esp32/get-started/linux-macos-setup.html)，下面就安装过程进行简单说明：
 
 
-### 2.2.1 准备linux的电脑或者虚拟机
+#### 2.2.1 准备linux的电脑或者虚拟机
 
 教程使用Ubuntu22.04的虚拟机环境，以安装v5.1.2为例，**注意本教程后续使用v5.2.3进行教学**，读者下载时建议下载新的`v5.2.3`版本。
 
 ![](attachments/20240125114613.png)
 
 
-### 2.2.2 下载ESP-IDF包环境
+#### 2.2.2 下载ESP-IDF包环境
 
 下载ESP-IDF包环境，这里有两种下载方式：直接使用`git clone`命令下载，或者手动前往ESP-IDF仓库下载
 
@@ -187,7 +193,7 @@ git clone -b v5.1.2 --recursive https://github.com/espressif/esp-idf.git
 
 > PS：这里也可以安装多个版本，在这个目录中，不会冲突
 
-### 2.2.3 安装依赖项
+#### 2.2.3 安装依赖项
 
 编译 ESP-IDF 需要以下软件包。请根据使用的 Linux 发行版本，选择合适的安装命令。
 
@@ -206,7 +212,7 @@ sudo yum -y update && sudo yum install git wget flex bison gperf python3 python3
 sudo pacman -S --needed gcc git make flex bison gperf python cmake ninja ccache dfu-util libusb
 ```
 
-### 2.2.3  安装 ESP-IDF 使用的各种工具
+#### 2.2.3  安装 ESP-IDF 使用的各种工具
 
 这里使用全部安装：
 
@@ -242,7 +248,7 @@ trusted-host=mirrors.aliyun.com
 
 > 如果还失败就去修改：~/.config/pip/pip.conf 这个配置文件
 
-### 2.2.4  配置快捷指令
+#### 2.2.4  配置快捷指令
 
 在终端执行`. $HOME/esp/esp-idf/export.sh`  这个脚本，就可以在当前终端使用esp-idf工具
 
@@ -265,7 +271,7 @@ nano ~/.bashrc
 ```sh
 source ~/.bashrc
 ```
-### 2.2.5  测试编译
+#### 2.2.5  测试编译
 
 打开历程目录下的hello_world程序：
 
@@ -286,7 +292,7 @@ alias idf53='. $HOME/esp/v532/esp-idf/export.sh'
 最后在这里分享本节安装使用的相关软件和安装好IDF的Linux虚拟机：[软件资源](https://www.alipan.com/s/PRCdvqnzCWL)
 
 
-# 三、(进阶)Windows下使用ssh调用Linux系统下的开发环境
+## 三、(进阶)Windows下使用ssh调用Linux系统下的开发环境
 
 
 SSH (Secure Shell) 是一种网络协议，用于在不安全的网络上安全地访问远程设备和服务器。它提供了强大的加密功能，可以保护用户和服务器之间的通信免受窃听、篡改和中间人攻击。
@@ -305,7 +311,7 @@ ssh user@host
 
 在Windows下使用VS Code通过SSH调用Linux系统的开发环境，可以在有效提升编译速度的同时，进一步提升开发体验，下面是详细的步骤：
 
-## 3.1 配置SSH连接，确保可以连接
+### 3.1 配置SSH连接，确保可以连接
 
 1. 确保Linux服务器已启动，并记录其IP地址或主机名，在Linux使用`ifconfig`命令查询虚拟机IP（也可以使用`ip a`命令），找不到命令 `ifconfig`，但可以通过以下命令安装它：
 
@@ -341,27 +347,27 @@ sudo ufw allow ssh
 ![](attachments/20250105213305.png)
   
   这一步可能需要在Windows上安装OpenSSH客户端（默认Windows 10及以上版本自带）
-## 3.2 安装Remote - SSH插件
+### 3.2 安装Remote - SSH插件
 
 打开VS Code，点击左侧的扩展市场图标，搜索`Remote - SSH`插件并安装。
 
 ![](attachments/20250104234434.png)
 
 
-## 3.3 通过Remote - SSH连接到Linux服务器
+### 3.3 通过Remote - SSH连接到Linux服务器
 
 1. 打开VS Code，按下`Ctrl+Shift+P`，输入`Remote-SSH: Add New SSH Host`并选择该项。
 2. 输入SSH连接命令，例如：  
    ssh 用户名@服务器IP地址  
    然后选择一个保存SSH配置的路径（默认路径是`~/.ssh/config`）。
 
-## 3.4 在VS Code中打开ESP-IDF工程
+### 3.4 在VS Code中打开ESP-IDF工程
 
 1. 使用VS Code的`File -> Open Folder`功能，选择Linux服务器中的ESP-IDF项目目录：
    例如： `~/esp/esp-idf/examples/get-started/hello_world`
 2. 打开项目后，VS Code会加载远程的文件结构。
 
-## 3.5 配置密钥，实现免密连接
+### 3.5 配置密钥，实现免密连接
 
 1. 在Windows下使用`ssh-keygen`生成密钥，按提示操作：
    默认保存路径是 ~/.ssh/id_rsa（直接按回车即可）。可为密钥设置密码，如果不想设置，直接回车跳过。生成完成后，会在默认路径下生成：
@@ -388,7 +394,7 @@ nano ~/.ssh/authorized_keys
 chmod 600 ~/.ssh/authorized_keys
 ```
 
-## 3.6 编译和调试项目
+### 3.6 编译和调试项目
 
 1. 在终端窗口中，运行以下命令以编译项目：
   ` idf.py build`

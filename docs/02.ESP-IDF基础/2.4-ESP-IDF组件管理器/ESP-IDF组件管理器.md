@@ -1,3 +1,9 @@
+# ESP32组件管理器
+
+> [!NOTE]
+> 对应视频教程：https://www.bilibili.com/video/BV1etfHYgE6M <br>
+> 对应示例代码：[button_blink](https://github.com/DuRuofu/ESP32-Guide-Code/tree/master/02.idf_basic/04/button_blink)
+
 关于ESP-IDF组件管理器的文档，可以参考：[ API 指南 » 工具 » IDF 组件管理器](https://docs.espressif.com/projects/esp-idf/zh_CN/stable/esp32/api-guides/tools/idf-component-manager.html)
 ## 一、啥是组件管理器
 
@@ -98,7 +104,6 @@ if(NULL == gpio_btn) {
 Button 组件支持为多个事件注册回调函数，每个事件都可以注册一个回调函数，当事件发生时，回调函数将会被调用。
 
 ``` c
-
 static void button_single_click_cb(void *arg,void *usr_data)
 {
     ESP_LOGI(TAG, "BUTTON_SINGLE_CLICK");
@@ -177,7 +182,7 @@ void app_main(void)
 实现的效果为：单击开发板上的按键，可以控制LED翻转。
 
 以上就是ESP32组件管理器及第三方组件的使用。
-# 参考链接
+## 参考链接
 
 1. https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/api-guides/tools/idf-component-manager.html
 2. https://components.espressif.com/components/espressif/button/versions/3.5.0?language=en

@@ -1,7 +1,13 @@
+# ESP32项目配置
+
+> [!NOTE]
+> 对应视频教程：https://www.bilibili.com/video/BV15xwbeiEnD <br>
+> 对应示例代码：[blink_menuconfig](https://github.com/DuRuofu/ESP32-Guide-Code/tree/master/02.idf_basic/02)
+
 关于项目配置部分的文档，可以参考：[ API 参考 » 项目配置](https://docs.espressif.com/projects/esp-idf/zh_CN/v5.3.2/esp32/api-reference/kconfig.html)
 
 首先我们先借助一个具体的例子来解释Menuconfig命令的使用和Kconfig文件的作用。
-# 一、Menuconfig的使用
+## 一、Menuconfig的使用
 
 打开示例工程：`esp-idf/examples/get-started/blink`
 
@@ -63,7 +69,7 @@
 只是形式与命令行略有不同，但配置项内容都是一样的，特在此补充说明。
 
 
-# 二、组件配置文件
+## 二、组件配置文件
 
 那么我们刚才在`menuconfig`菜单里看到的关于LED配置的内容是那来的呢，通过官方文档，我们可以知道它来源于main组件下的 `Kconfig.projbuild` 文件。
 
@@ -164,13 +170,13 @@ endmenu
 
 同时，ESP-IDF默认组件也使用了大量的`Kconfig`配置，通过这些配置，我们可以修改ESP-IDF的很多默认配置项，比如系统分区表、FreeRTOS 配置（任务调度器的行为、栈大小、系统 tick 时间）、驱动程序设置、日志输出级别等。
 
-# 三、为什么要用组件配置（Menuconfig）
+## 三、为什么要用组件配置（Menuconfig）
 
 1. 组件配置可以将相关配置常量移出代码，增强配置的可复用度。
 2. 组件配置生成的宏定义，配合C语言的预处理语句，可以针对不同的配置改变代码解结构。
 3. 组件配置变量也可以被CMake访问，可以通过手写逻辑实现根据配置执行不同的构建方案（如某个源文件要不要添加到构建系统）。参考：[预设的组件变量](https://docs.espressif.com/projects/esp-idf/zh_CN/v5.3.2/esp32/api-guides/build-system.html#preset-component-variables)
 
-# 四、创建组件配置
+## 四、创建组件配置
 
 
 下面我们试着自己写一个组件配置，体验一下全流程，首先复制`blink`历程到自己的目录，重命名为 `blink_menuconfig`
@@ -240,7 +246,7 @@ endmenu
 
 最后我们只需要在对应的c文件里引用`sdkconfig.h`这个头文件，我们就可以使用我们自定义的这些宏，还需要说明的一点是这些宏会被默认加上`CONFIG_`前缀，所以我们定义的`BLINK_GPIO`在实际使用时应该写作：`CONFIG_BLINK_GPIO`
 
-# 五、组件配置相关文件
+## 五、组件配置相关文件
 
 最后总结一下，并附上一些细碎的知识点，不求大家记住，只要有个印象即可，具体要用到了再回来查。
 
@@ -272,7 +278,7 @@ endmenu
 
 最后再讲一下`Kconfig` 和 `Kconfig.projbuild` 文件有什么区别，可以参考官方文档：[KConfig.projbuild](https://docs.espressif.com/projects/esp-idf/zh_CN/v5.3.2/esp32/api-guides/build-system.html?highlight=kconfig%20projbuild#kconfig-projbuild)
 
-# 参考链接
+## 参考链接
 
 1. https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/api-reference/kconfig.html
 2. https://docs.espressif.com/projects/esp-idf/zh_CN/v5.3.2/esp32/api-guides/build-system.html#custom-sdkconfig-defaults

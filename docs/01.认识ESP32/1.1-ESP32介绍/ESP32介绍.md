@@ -1,5 +1,8 @@
+# ESP32介绍
 
-# 一、ESP32是什么？
+> [!NOTE]
+> 对应视频教程：https://www.bilibili.com/video/BV1u861YHEso
+## 一、ESP32是什么？
 
 ESP32是一款由乐鑫（Espressif）公司研发的高性能、低功耗Wi-Fi和蓝牙双模芯片。它专为物联网（IoT）设计，集成了丰富的功能模块和硬件接口，是目前最流行的物联网嵌入式开发平台之一。
 
@@ -30,7 +33,7 @@ ESP32指的是ESP32裸芯片，但我们常说的“ESP32”一词通常指ESP32
 
 ---
 
-# 二、为什么要学习ESP32？
+## 二、为什么要学习ESP32？
 
 学习ESP32不仅是掌握一项技能，更是打开物联网开发大门的关键。以下是学习ESP32的几大优势：
 
@@ -49,13 +52,13 @@ ESP32指的是ESP32裸芯片，但我们常说的“ESP32”一词通常指ESP32
 
 ---
 
-# 三、怎么学习ESP32？
+## 三、怎么学习ESP32？
 
 
-## 3.1 选择开发环境
+### 3.1 选择开发环境
 
 ESP32开发方式主要分为以下三种，本教程推荐使用第一种ESP-IDF进行开发，下面是几种开发框架的对比分析。
-### 3.1.1 ESP-IDF
+#### 3.1.1 ESP-IDF
 
 ![](attachments/1.png)
 
@@ -66,7 +69,7 @@ ESP-IDF（Espressif IoT Development Framework）是乐鑫官方提供的开发�
 - 内置 FreeRTOS，适合实时多任务开发。
 **适用人群**：有嵌入式开发经验或需要深度优化性能的开发者。
 推荐使用：官方文档 + VS Code 插件 + Linux/Windows 开发环境。
-### 3.1.2 ESP-Arduino
+#### 3.1.2 ESP-Arduino
 
 ![](attachments/2.png)
 
@@ -78,7 +81,7 @@ ESP-IDF（Espressif IoT Development Framework）是乐鑫官方提供的开发�
 **适用人群**：嵌入式初学者、爱好者以及需要快速开发和验证功能的开发者。
 **推荐使用**：Arduino IDE 或 PlatformIO 。
 
-### 3.1.3 Micro Python
+#### 3.1.3 Micro Python
 
 ![](attachments/3.png)
 
@@ -90,9 +93,9 @@ ESP-IDF（Espressif IoT Development Framework）是乐鑫官方提供的开发�
 **适用人群**：编程初学者、Python 开发者，或对嵌入式感兴趣但不熟悉 C/C++ 的用户。
 **推荐使用**：Thonny IDE ，结合官方 MicroPython 文档。
 
-## 3.2 学习方法
+### 3.2 学习方法
 
-### 心法：
+#### 心法：
 
 1. 迅速掌握基本开发知识
    初学阶段不要纠结于细枝末节，重点是快速上手，掌握 ESP32 开发的基本流程和核心概念。
@@ -103,12 +106,12 @@ ESP-IDF（Espressif IoT Development Framework）是乐鑫官方提供的开发�
 4. 以项目驱动学习（费曼学习法）
    学习的最佳方式是通过动手做项目，解决实际问题的过程中不仅巩固知识，还能找到自己的薄弱环节并加以改进。
 
-### 途径：
+#### 途径：
 
 ![](attachments/4.png)
 首先选择一个实际项目作为切入点，例如让 ESP32 控制一个 LED 并通过 Wi-Fi 连接到本地网络进行远程控制。在项目中遇到具体功能需求时，针对性地学习相关模块，比如 GPIO 操作、Wi-Fi 配置等，MQTT协议。通过搜索引擎（如Bing）或视频教程快速理解基础概念，在掌握基础概念后，去阅读官方文档，了解ESP32这个模块如何使用（看不懂再去看视频），以官方历程代码为参考，结合项目需求进行实验和优化。随着学习的深入，可以拓展到更复杂的功能模块，比如蓝牙通信或低功耗模式，最终通过一个个项目的积累，系统掌握 ESP32 的开发技能。这种以项目驱动为核心、逐步深入的学习方式，可以帮助快速上手，同时在实践中巩固知识。
 
-## 3.3 学习资源推荐
+### 3.3 学习资源推荐
 
 重要的事情说三遍：
 
@@ -118,10 +121,10 @@ ESP-IDF（Espressif IoT Development Framework）是乐鑫官方提供的开发�
 
 乐鑫的官方文档和官方历程一定是最好的学习ESP32的素材和指南。
 
-其次，我在这里推荐一些相关的ESP32视频教程UP主，看不懂文档时可以参考他们的视频：
+最后，我在这里推荐一些相关的ESP32视频教程UP主，看不懂文档时可以参考他们的视频：
 
-- **Michael_ee**：https://space.bilibili.com/505630520/fans/follow?tagid=529812
-- 孤独的二进制：https://space.bilibili.com/1375767826
-- 第九个下弦月：https://space.bilibili.com/34165842?spm_id_from=333.999.0.0
-- 宸芯IOT：https://space.bilibili.com/1458941333?spm_id_from=333.337.search-card.all.click
-- ESP_Friends：https://space.bilibili.com/3493296718482287?spm_id_from=333.337.search-card.all.click
+- **Michael_ee**： https://space.bilibili.com/1338335828
+- 孤独的二进制： https://space.bilibili.com/1375767826
+- 第九个下弦月： https://space.bilibili.com/34165842
+- 宸芯IOT： https://space.bilibili.com/1458941333
+- ESP_Friends： https://space.bilibili.com/3493296718482287

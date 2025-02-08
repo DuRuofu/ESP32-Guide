@@ -1,4 +1,10 @@
 
+# FreeRTOS多任务管理
+
+> [!NOTE]
+> 对应视频教程：暂无 <br>
+> 对应示例代码：暂无
+
 注意：与原生 FreeRTOS 不同，在 ESP-IDF 中使用 FreeRTOS 的用户 \永远不应调用 `vTaskStartScheduler()` 和 `vTaskEndScheduler()`。相反，ESP-IDF 会自动启动 FreeRTOS。用户必须定义一个 `void app_main(void)` 函数作为用户应用程序的入口点，并在 ESP-IDF 启动时被自动调用。
 
 通常，用户会从 `app_main` 中启动应用程序的其他任务。`app_main` 函数可以在任何时候返回（应用终止前）。`app_main` 函数由 main 任务调用。

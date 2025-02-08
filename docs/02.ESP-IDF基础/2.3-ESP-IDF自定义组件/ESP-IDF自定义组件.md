@@ -1,3 +1,9 @@
+# ESP32自定义组件
+
+> [!NOTE]
+> 对应视频教程：https://www.bilibili.com/video/BV182ftYHEox <br>
+> 对应示例代码：[blink_component](https://github.com/DuRuofu/ESP32-Guide-Code/tree/master/02.idf_basic/03/blink_component)
+
 关于ESP-IDF自定义组件部分的文档，可以参考：[API 指南 » 构建系统](https://docs.espressif.com/projects/esp-idf/zh_CN/v5.3.2/esp32/api-guides/build-system.html?highlight=kconfig%20projbuild#component-configuration)
 ## 一 、自定义组件介绍：
 
@@ -179,7 +185,7 @@ void app_main(void)
 
 这样就完成了代码的模块化，关于组件依赖，依赖嵌套还有一些值得注意的地方，不过目前入门阶段不必深究，后续学习过程中会娓娓道来。
 
-# 参考链接
+## 参考链接
 
 1. https://docs.espressif.com/projects/esp-idf/zh_CN/latest/esp32/api-guides/build-system.html
 2. https://developer.espressif.com/blog/2024/12/how-to-create-an-esp-idf-component/
