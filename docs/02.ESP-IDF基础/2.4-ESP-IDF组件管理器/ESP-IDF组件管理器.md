@@ -2,7 +2,7 @@
 
 > [!NOTE]
 > 对应视频教程：https://www.bilibili.com/video/BV1etfHYgE6M <br>
-> 对应示例代码：[button_blink](https://github.com/DuRuofu/ESP32-Guide-Code/tree/master/02.idf_basic/04/button_blink)
+> 对应示例代码：[button_blink](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/02.idf_basic/04/button_blink)
 
 关于ESP-IDF组件管理器的文档，可以参考：[ API 指南 » 工具 » IDF 组件管理器](https://docs.espressif.com/projects/esp-idf/zh_CN/stable/esp32/api-guides/tools/idf-component-manager.html)
 ## 一、啥是组件管理器
@@ -26,7 +26,7 @@ ESP-IDF官方对组件管理器的描述是这样的：
 
 ## 二、组件管理器使用示例：
 
-下面我们基于[ESP-IDF自定义组件](../2.3-ESP-IDF自定义组件/ESP-IDF自定义组件.md)教程中编写的[blink_component](https://github.com/DuRuofu/ESP32-Guide-Code/tree/master/02.idf_basic/03/blink_component)工程来实现使用一下官方的组件管理器，复制工程，重命名为`button_blink`
+下面我们基于[ESP-IDF自定义组件](../2.3-ESP-IDF自定义组件/ESP-IDF自定义组件.md)教程中编写的[blink_component](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/02.idf_basic/03/blink_component)工程来实现使用一下官方的组件管理器，复制工程，重命名为`button_blink`
 
 ### 2.1 组件介绍
 

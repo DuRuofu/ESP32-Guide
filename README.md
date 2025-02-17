@@ -1,9 +1,12 @@
 # ESP32从初见到入门（ESP32-Guide）
 
 ![](attachments/20250202192226.png)
+## 许可协议：
+
+本仓库中的文本、代码、图片和视频均采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议— [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)。
 ## 前言：
 
-本教程旨在记录并分享个人学习ESP32过程中的经验和心得，以帮助其他初学者快速上手ESP32开发。这是一份从初学者视角出发，整理了学习ESP32的一条较为合理的路径和方法的笔记汇编。
+本教程基于**ESP-IDF-V5.3.2**，旨在记录并分享个人学习ESP32过程中的经验和心得，以帮助其他初学者快速上手ESP32开发。这是一份从初学者视角出发，整理了学习ESP32的一条较为合理的路径和方法的笔记汇编。
 
 文档内容基于对大量优质ESP32教程、官方文档以及实际项目实践的总结和理解，力求做到内容清晰、条理分明，既注重基础知识的巩固，也兼顾实战技能的提升。希望通过本教程，读者能少走弯路，从初学到实战开发，逐步掌握ESP32的开发技能。
 
@@ -42,40 +45,37 @@
 
 ### 当前进度：
 
-| 章节             | 教程                   | 文字教程 | 视频教程 | 配套代码 | 完成日期       |
-| -------------- | -------------------- | :--: | :--: | :--: | ---------- |
-| 一、认识ESP32      | 1.1 ESP32介绍          |  ✔   |  ✔   |  无   | 2025/1/3   |
-| 一、认识ESP32      | 1.2 ESP32开发环境搭建      |  ✔   | ✔✔✔  |  无   | 2025/1/4-6 |
-| 一、认识ESP32      | 1.3 idf.py的基本使用      |  ✔   |  ✔   |  无   | 2025/1/7   |
-| 二、IDF基础与工具使用   | 2.1 ESP32工程结构及构建     |  ✔   |  ✔   |  ✔   | 2025/1/9   |
-| 二、IDF基础与工具使用   | 2.2 ESP-IDF项目配置      |  ✔   |  ✔   |  ✔   | 2025/1/21  |
-| 二、IDF基础与工具使用   | 2.3 ESP-IDF自定义组件     |  ✔   |  ✔   |  ✔   | 2025/1/22  |
-| 二、IDF基础与工具使用   | 2.4 ESP-IDF组件管理器     |  ✔   |  ✔   |  ✔   | 2025/1/24  |
-| 三、FreeRTOS基础   | 3.1 FreeRTOS概述       |  ⏳   |  ⏳   |  无   |            |
-| 三、FreeRTOS基础   | 3.2 FreeRTOS多任务与任务管理 |  ⏳   |      |      |            |
-| 三、FreeRTOS基础   | 3.3 FreeRTOS任务看门狗    |  ⏳   |      |      |            |
-| 四、外设学习         | 4.1.1 GPIO入门         |  ⏳   |      |      |            |
-| 四、外设学习         | 4.1.2 UART串口通信       |  ⏳   |      |      |            |
-| 四、外设学习         | 4.1.3 硬件定时器          |  ⏳   |      |      |            |
-| 四、外设学习         | 4.1.4 ADC模数转换        |  ⏳   |      |      |            |
-| 四、外设学习         | 4.1.5 DAC数模转换        |  ⏳   |      |      |            |
-| 四、外设学习         | 4.1.6 LED PWM控制      |  ⏳   |      |      |            |
-| 四、外设学习         | 4.1.7 I2C通信          |  ⏳   |      |      |            |
-| 四、外设学习         | 4.1.8 SPI通信          |  ⏳   |      |      |            |
-| 四、外设学习         | 4.2.1 分区表设计          |  ⏳   |      |      |            |
-| 四、外设学习         | 4.2.2 非易失性存储         |  ⏳   |      |      |            |
-| 四、外设学习         | 4.2.3 FAT文件系统        |  ⏳   |      |      |            |
-| 四、外设学习         | 4.2.4 SPIFFS文件系统     |  ⏳   |      |      |            |
-| 五、FreeRTOS进阶   | 5.1 FreeRTOS队列使用教程   |  ⏳   |      |      |            |
-| 五、FreeRTOS进阶   | 5.2 FreeRTOS信号量教程    |  ⏳   |      |      |            |
-| 五、FreeRTOS进阶   | 5.3 FreeRTOS互斥量教程    |  ⏳   |      |      |            |
-| 五、FreeRTOS进阶   | 5.4 FreeRTOS事件组教程    |  ⏳   |      |      |            |
-| 五、FreeRTOS进阶   | 5.5 FreeRTOS任务通知教程   |  ⏳   |      |      |            |
-| 五、FreeRTOS进阶   | 5.6 FreeRTOS软件定时器教程  |  ⏳   |      |      |            |
-| 六、Wi-Fi功能与相关协议 | 6.1.1 Wi-Fi模式与基础操作   |  ⏳   |      |      |            |
-| 六、Wi-Fi功能与相关协议 | 6.1.2 Wi-Fi STA与AP配置 |  ⏳   |      |      |            |
-| 六、Wi-Fi功能与相关协议 | 6.2.1 TCP协议应用        |  ⏳   |      |      |            |
-| 六、Wi-Fi功能与相关协议 | 6.2.2 UDP协议应用        |      |      |      |            |
+| 章节             | 教程                   |     文字教程     | 视频教程 | 配套代码 | 完成日期       |
+| -------------- | -------------------- | :----------: | :--: | :--: | ---------- |
+| 一、认识ESP32      | 1.1 ESP32介绍          |      ✔       |  ✔   |  无   | 2025/1/3   |
+| 一、认识ESP32      | 1.2 ESP32开发环境搭建      |      ✔       | ✔✔✔  |  无   | 2025/1/4-6 |
+| 一、认识ESP32      | 1.3 idf.py的基本使用      |      ✔       |  ✔   |  无   | 2025/1/7   |
+| 二、IDF基础与工具使用   | 2.1 ESP32工程结构及构建     |      ✔       |  ✔   |  ✔   | 2025/1/9   |
+| 二、IDF基础与工具使用   | 2.2 ESP-IDF项目配置      |      ✔       |  ✔   |  ✔   | 2025/1/21  |
+| 二、IDF基础与工具使用   | 2.3 ESP-IDF自定义组件     |      ✔       |  ✔   |  ✔   | 2025/1/22  |
+| 二、IDF基础与工具使用   | 2.4 ESP-IDF组件管理器     |      ✔       |  ✔   |  ✔   | 2025/1/24  |
+| 三、FreeRTOS基础   | 3.1 FreeRTOS概述       |      ⏳       |  ⏳   |  无   |            |
+| 三、FreeRTOS基础   | 3.2 FreeRTOS多任务与任务管理 |      ⏳       |      |      |            |
+| 三、FreeRTOS基础   | 3.3 FreeRTOS任务看门狗    |      ⏳       |      |      |            |
+| 四、外设学习         | 4.1.1 GPIO入门         |      ✔       |      |      |            |
+| 四、外设学习         | 4.1.2 UART串口通信       |      ✔       |      |      |            |
+| 四、外设学习         | 4.1.3 硬件定时器          |      ✔       |      |      |            |
+| 四、外设学习         | 4.1.4 ADC模数转换        |      ✔       |      |      |            |
+| 四、外设学习         | 4.1.5 DAC数模转换        |      ✔       |      |      |            |
+| 四、外设学习         | 4.1.6 LED PWM控制      |      ✔       |      |      |            |
+| 四、外设学习         | 4.1.7 I2C通信          | ✔（新版I2C暂未更新） |      |      |            |
+| 四、外设学习         | 4.1.8 SPI通信          |      ⏳       |      |      |            |
+| 四、外设学习         | 4.2.1 分区表设计          |      ✔       |      |      |            |
+| 四、外设学习         | 4.2.2 非易失性存储         |      ✔       |      |      |            |
+| 四、外设学习         | 4.2.3 FAT文件系统        |      ✔       |      |      |            |
+| 四、外设学习         | 4.2.4 SPIFFS文件系统     |      ✔       |      |      |            |
+| 五、FreeRTOS进阶   | 5.1 FreeRTOS队列使用教程   |      ✔       |      |      |            |
+| 五、FreeRTOS进阶   | 5.2 FreeRTOS信号量教程    |      ✔       |      |      |            |
+| 五、FreeRTOS进阶   | 5.3 FreeRTOS互斥量教程    |      ✔       |      |      |            |
+| 五、FreeRTOS进阶   | 5.4 FreeRTOS事件组教程    |      ✔       |      |      |            |
+| 五、FreeRTOS进阶   | 5.5 FreeRTOS任务通知教程   |      ✔       |      |      |            |
+| 五、FreeRTOS进阶   | 5.6 FreeRTOS软件定时器教程  |      ✔       |      |      |            |
+
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -89,8 +89,12 @@
 
 ![](attachments/最小系统开发板.png)
 
-至于LVGL，特殊外设，实战演练部分，会在教程章节单独推荐开发板。
+如果想进一步节省学习成本，还可以使用这种9.9元的ESP32-C3开发板（淘宝搜下面的图）：
 
+![](attachments/esp-c3开发板.png)
+
+
+至于LVGL，特殊外设，实战演练部分，会在教程章节单独推荐开发板或外设模块。
 
 ## 〇、常见问题及解决方案：
 
@@ -99,6 +103,7 @@
 > 常见问题及解决方案：[常见问题及解决方案.md](docs/00.常见问题及解决方案/常见问题及解决方案.md)
 
 ## 一、认识ESP32 【完结】
+
 > 目标：学会安装ESP-IDF开发环境，并使用其烧录代码，掌握ESP32的基本特点及工具使用。  
 
 ### 1.1 什么是ESP32
@@ -112,7 +117,9 @@
 
 本节将详细讲解如何在不同操作系统（Windows/Linux/Mac）上搭建ESP-IDF开发环境，涵盖工具链安装、环境变量配置及调试工具的准备等内容。通过本节，读者可以完成开发环境的搭建，为后续开发做好准备。  
 
-- 在线文字教程：[ESP-IDF开发环境搭建.md](docs/01.认识ESP32/1.2-ESP32开发环境搭建/ESP32开发环境搭建.md)
+- 在线文字教程-1：[环境搭建-Windows.md](docs/01.认识ESP32/1.2-ESP32开发环境搭建/1.环境搭建-Windows.md)
+- 在线文字教程-2：[环境搭建-Ubuntu虚拟机.md](docs/01.认识ESP32/1.2-ESP32开发环境搭建/2.环境搭建-Ubuntu虚拟机.md)
+- 在线文字教程-3：[环境搭建-Windows与虚拟机组合使用.md](docs/01.认识ESP32/1.2-ESP32开发环境搭建/3.环境搭建-Windows与虚拟机组合使用.md)
 - 在线视频教程-1：[认识ESP32—1.2.1 Win下安装ESP-IDF开发环境](https://www.bilibili.com/video/BV14o62YQEBC?vd_source=ef5a0ab0106372751602034cdd9ab98e&spm_id_from=333.788.videopod.sections)
 - 在线视频教程-2：[认识ESP32—1.2.2 Linux下安装ESP-IDF开发环境](https://www.bilibili.com/video/BV1vLrKYHExy/?vd_source=ef5a0ab0106372751602034cdd9ab98e#reply251069588753)
 - 在线视频教程-3：[认识ESP32—1.2.3 Windows下使用ssh调用Linux系统下的开发环境](https://www.bilibili.com/video/BV1vLrKYHExy/?vd_source=ef5a0ab0106372751602034cdd9ab98e#reply251069588753)
@@ -123,7 +130,7 @@
 
 - 在线文字教程：[ESP32初体验-idf.py的基本使用.md](docs/01.认识ESP32/1.3-初试ESP32-idf.py的基本使用/idf.py的基本使用.md)
 - 在线视频教程：[ESP32初体验-idf.py的基本使用](https://www.bilibili.com/video/BV1VLrSY3E15?spm_id_from=333.788.videopod.sections&vd_source=ef5a0ab0106372751602034cdd9ab98e)
-- 教程配套代码：[hello_world](https://github.com/DuRuofu/ESP32-Guide-Code/tree/master/01.start/hello_world)
+- 教程配套代码：[hello_world](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/01.start/hello_world)
 
 ---
 
@@ -137,7 +144,7 @@
 
 - 在线文字教程：[ESP32工程结构.md](docs/02.ESP-IDF基础/2.1-ESP32工程结构/ESP-IDF的工程结构.md)
 - 在线视频教程：[ESP32工程结构](https://www.bilibili.com/video/BV1CfrzYcEkK/?spm_id_from=333.1387.homepage.video_card.click&vd_source=ef5a0ab0106372751602034cdd9ab98e)
-- 教程配套代码：[基础工程模板代码](https://github.com/DuRuofu/ESP32-Guide-Code/tree/master/02.idf_basic/01/sample_project)  
+- 教程配套代码：[基础工程模板代码](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/02.idf_basic/01/sample_project)  
 
 ### 2.2 ESP-IDF项目配置
 
@@ -145,7 +152,7 @@
 
 - 在线文字教程：[ESP-IDF项目配置.md](docs/02.ESP-IDF基础/2.2-ESP-IDF项目配置/ESP-IDF项目配置.md)
 - 在线视频教程：[ESP-IDF项目配置详解](https://www.bilibili.com/video/BV15xwbeiEnD/)
-- 教程配套代码：[项目配置示例代码](https://github.com/DuRuofu/ESP32-Guide-Code/tree/master/02.idf_basic/02)  
+- 教程配套代码：[项目配置示例代码](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/02.idf_basic/02)  
 
 ### 2.3 ESP-IDF自定义组件
 
@@ -153,7 +160,7 @@
 
 - 在线文字教程：[ESP-IDF自定义组件.md](docs/02.ESP-IDF基础/2.3-ESP-IDF自定义组件/ESP-IDF自定义组件.md)
 - 在线视频教程：[ESP-IDF自定义组件](https://www.bilibili.com/video/BV182ftYHEox/?spm_id_from=333.1387.upload.video_card.click&vd_source=ef5a0ab0106372751602034cdd9ab98e)
-- 教程配套代码：[组件示例代码](https://github.com/DuRuofu/ESP32-Guide-Code/tree/master/02.idf_basic/03/blink_component)
+- 教程配套代码：[组件示例代码](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/02.idf_basic/03/blink_component)
 
 ### 2.4 ESP-IDF组件管理器
 
@@ -161,7 +168,7 @@
 
 - 在线文字教程：[ESP-IDF组件管理器.md](docs/02.ESP-IDF基础/2.4-ESP-IDF组件管理器/ESP-IDF组件管理器.md)
 - 在线视频教程：[ESP-IDF组件管理器详解](https://www.bilibili.com/video/BV1etfHYgE6M/)
-- 教程配套代码：[组件管理器示例代码](https://github.com/DuRuofu/ESP32-Guide-Code/tree/master/02.idf_basic/04/button_blink)
+- 教程配套代码：[组件管理器示例代码](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/02.idf_basic/04/button_blink)
 
 ---
 
@@ -526,6 +533,16 @@ MCPWM 外设是一个多功能 PWM 生成器，集成多个子模块，在电力
 > 补充一些综合性性案例，与实用功能，为前八章做补充。
 
 
+###  1.Web服务程序(Vue3+element-plus)
+> 在线文字教程：[WEB服务程序(Vue3+element-plus).md](docs/09.其他实用内容/WEB服务程序(Vue3+element-plus)/WEB服务程序.md)
+> 在线视频教程：
+> 教程配套代码：[WEB服务程序示例代码](docs/09.其他实用内容/WEB服务程序(Vue3+element-plus)/WEB服务程序.md)
+
+###  1. OTA功能
+
+
+
+
 
 ## 十、项目实战
 
@@ -534,12 +551,9 @@ MCPWM 外设是一个多功能 PWM 生成器，集成多个子模块，在电力
 
 ## 参考链接
 
-- 孤独的二进制：https://space.bilibili.com/1375767826
-- Augtons正(单片机)：https://blog.csdn.net/m0_50064262/article/details/120250151
-- 乐鑫文档：https://docs.espressif.com/projects/esp-idf/zh_CN/release-v4.4/esp32c3/index.html
-- 第九个下弦月：https://space.bilibili.com/34165842?spm_id_from=333.999.0.0
-- **Michael_ee**：https://space.bilibili.com/505630520/fans/follow?tagid=529812
+- 孤独的二进制： https://space.bilibili.com/1375767826
+- Augtons正(单片机)： https://blog.csdn.net/m0_50064262/article/details/120250151
+- 乐鑫文档： https://docs.espressif.com/projects/esp-idf/zh_CN/release-v4.4/esp32c3/index.html
+- 第九个下弦月： https://space.bilibili.com/34165842?spm_id_from=333.999.0.0
+- **Michael_ee**： https://space.bilibili.com/505630520/fans/follow?tagid=529812
 
-# License
-
-The texts, code, images,, and videos in this repository are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).

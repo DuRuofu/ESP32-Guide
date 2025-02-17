@@ -2,7 +2,7 @@
 
 > [!NOTE]
 > 对应视频教程：https://www.bilibili.com/video/BV15xwbeiEnD <br>
-> 对应示例代码：[blink_menuconfig](https://github.com/DuRuofu/ESP32-Guide-Code/tree/master/02.idf_basic/02)
+> 对应示例代码：[blink_menuconfig](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/02.idf_basic/02)
 
 关于项目配置部分的文档，可以参考：[ API 参考 » 项目配置](https://docs.espressif.com/projects/esp-idf/zh_CN/v5.3.2/esp32/api-reference/kconfig.html)
 

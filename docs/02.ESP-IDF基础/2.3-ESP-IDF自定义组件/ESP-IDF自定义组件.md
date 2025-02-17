@@ -2,7 +2,7 @@
 
 > [!NOTE]
 > 对应视频教程：https://www.bilibili.com/video/BV182ftYHEox <br>
-> 对应示例代码：[blink_component](https://github.com/DuRuofu/ESP32-Guide-Code/tree/master/02.idf_basic/03/blink_component)
+> 对应示例代码：[blink_component](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/02.idf_basic/03/blink_component)
 
 关于ESP-IDF自定义组件部分的文档，可以参考：[API 指南 » 构建系统](https://docs.espressif.com/projects/esp-idf/zh_CN/v5.3.2/esp32/api-guides/build-system.html?highlight=kconfig%20projbuild#component-configuration)
 ## 一 、自定义组件介绍：
@@ -35,7 +35,7 @@
 ## 二 、自定义组件示例：
 
 
-下面我们基于[ESP-IDF项目配置](../2.2-ESP-IDF项目配置/ESP-IDF项目配置.md)中编写的[blink_menuconfig](https://github.com/DuRuofu/ESP32-Guide-Code/tree/master/02.idf_basic/02/blink_menuconfig)工程来实现一个自定义的控制闪烁的组件。
+下面我们基于[ESP-IDF项目配置](../2.2-ESP-IDF项目配置/ESP-IDF项目配置.md)中编写的[blink_menuconfig](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/02.idf_basic/02/blink_menuconfig)工程来实现一个自定义的控制闪烁的组件。
 
 复制工程，重命名为`blink_component`
 
