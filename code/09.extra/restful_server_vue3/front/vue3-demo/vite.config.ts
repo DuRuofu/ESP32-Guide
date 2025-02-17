@@ -28,8 +28,7 @@ export default defineConfig({
     cors: true,
     proxy: {
       '/api': {
-        target: 'http://192.168.90.206:80',
-        //target: 'http://esp-home.local:80',
+        target: 'http://esp-home.local:80',
         changeOrigin: true,
         ws: true
       }
