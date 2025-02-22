@@ -1,0 +1,23 @@
+{
+  "name": "ESP-Config-WeChat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EspressifApps/ESP-Config-WeChat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EspressifApps/ESP-Config-WeChat/issues"
+  },
+  "homepage": "https://github.com/EspressifApps/ESP-Config-WeChat#readme",
+  "dependencies": {
+    "crypto-js": "^4.0.0"
+  }
+}

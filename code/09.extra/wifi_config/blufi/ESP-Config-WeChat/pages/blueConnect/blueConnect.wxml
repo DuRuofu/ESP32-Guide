@@ -1,0 +1,29 @@
+<!--pages/blueConnect/blueConnect.wxml-->
+<view class="container">
+  <block wx:if="{{!failure}}">
+    <view class="schedule">
+      <view class="schedule-result schedule-success">
+      <image class='schedule-img' mode='aspectFit' src='../../images/round.gif'></image>
+      <view class="desc-wrapper">
+        <view class="text-value"><text>{{value}}</text><text class="text-samll">%</text></view>
+        <view class="text-desc">{{desc}}</view>
+      </view>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="schedule fail">
+      <view class="schedule-result schedule-fail">
+        <image class='schedule-img' mode='aspectFit' src='../../images/failure.png'></image>
+        <view class="desc-wrapper">
+          <view class="text-sigh"><text>!</text></view>
+          <view class="text-desc">{{desc}}</view>
+        </view>
+      </view>
+    </view>
+  </block>
+  <view class="process-wrapper">
+    <text class="text-process" wx:for="{{processList}}" wx:key="*this">{{item}}</text>
+    <text>{{vConsoleV}}</text>
+  </view>
+</view>

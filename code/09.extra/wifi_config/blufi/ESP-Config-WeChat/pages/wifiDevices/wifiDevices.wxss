@@ -1,0 +1,20 @@
+/* pages/wifi/wifi.wxss */
+.container {
+  padding-top: 50rpx;
+}
+.checkbox{
+  color: #333
+}
+.back{
+  width: 40%;
+  margin: 0 auto
+}
+.colored{
+  color: red;
+}
+.hide{
+ display: none;
+}
+.show{ 
+ display: block;
+}

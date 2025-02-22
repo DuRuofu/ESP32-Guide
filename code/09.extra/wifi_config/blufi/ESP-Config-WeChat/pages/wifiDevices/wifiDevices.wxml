@@ -1,0 +1,23 @@
+<!--pages/wifi/wifi.wxml-->
+<view class='container'>
+    <view class='textcenter'>
+      <view><text class='font14'>第一步</text></view>
+      <view class="margintop10"><text class='font16'>双击设备按键</text></view>
+    </view>
+    <!-- 图片 -->
+    <view>
+      <image></image>
+    </view>
+    <view class='textcenter font14'>
+        <checkbox-group>
+          <label class="checkbox">
+            <checkbox color="#4d9efb" value=""/>我已双击设备按钮
+          </label>
+        </checkbox-group>
+    </view>
+    <view class='width100 margintop20' bindtap='next'>
+          <button class="btn" >下一步</button>
+    </view>
+    <!-- <button class='font14 back' >返回上一步</button> -->
+ 
+</view>

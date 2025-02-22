@@ -1,0 +1,119 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  padding: 0 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+.item {
+  display: flex;
+  height: 130rpx;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+.item-img {
+  flex: 0 0 100rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+.bluetooth-img {
+  height: 80rpx;
+  width: 80rpx;
+}
+.item-name {
+  flex: 1;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 32rpx;
+}
+.text-rssi {
+  font-size: 28rpx;
+  color: #999;
+}
+.btn {
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  background: #4d9efb;
+  border: none;
+  margin-bottom: 30rpx;
+  font-size: 14px;
+  color: #fff;
+}
+.font14 {
+  font-size: 14px;
+}
+.font16 {
+  font-size: 16px;
+}
+.textcenter {
+  text-align: center;
+}
+.width100 {
+  width: 100%;
+}
+.margintop20 {
+  margin-top: 20px;
+}
+.margintop10 {
+  margin-top: 10px;
+}
+.modal-mask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.7);  
+    overflow: hidden;
+    color: #ffffff;
+    z-index:900;
+}
+.modal-dialog{
+    background-color: #f9f9f9;
+    /*background: rgba(0,0,0,.7);*/
+    opacity: 0.95;
+    position: fixed;
+    z-index: 999;
+    top: 20%;
+    left: 10%;
+    overflow: hidden;
+    width: 80%;
+    color: #000;
+    border-radius: 26rpx;
+}
+.modal-dialog input{
+    margin: 15px 0;
+    padding: 0 20px;
+    font-size: 32rpx;
+}
+.modal-btn-wrapper{
+ display: flex;
+ flex-direction: row;
+ height: 100rpx;
+ line-height:90rpx;
+ border-top: 2rpx solid rgba(7,17,27,0.1);
+}
+.cancel-btn, .confirm-btn{
+ flex: 1;
+ height: 100rpx;
+ line-height: 100rpx;
+ text-align: center;
+ font-size: 32rpx;
+}
+.cancel-btn{
+ border-right: 2rpx solid rgba(7,17,27,0.1);
+}
+.modal-title{
+  text-align: center;
+  padding-top: 10px;
+}
+

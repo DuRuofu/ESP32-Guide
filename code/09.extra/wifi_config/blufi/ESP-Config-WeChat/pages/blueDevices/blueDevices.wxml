@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+  <view data-value="{{item.deviceId}}" bindtap="bindViewConnect" wx:for="{{deviceList}}" class="item" wx:key="*this">
+    <view class="item-img">
+    <image class='bluetooth-img' mode='aspectFit' src='../../images/bluetooth.png'></image>
+    </view>
+    <view class="item-name">
+      <text class="text-name">{{item.name}}</text>
+      <text class="text-rssi">Rssi: {{item.RSSI}}</text>
+      <text class="text-rssi">deviceId: {{item.deviceId}}</text>
+    </view>
+  </view>
+</view>

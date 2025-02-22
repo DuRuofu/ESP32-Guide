@@ -1,0 +1,35 @@
+<!--pages/wifi2/wifi2.wxml-->
+<view class='container'>
+    <view class='textcenter'>
+      <view><text class='font14'>第三步</text></view>
+      <view class="margintop10"><text class='font16'>请选择您的WiFi</text></view>
+    </view>
+    <!-- wifi -->
+    <view class="width100 margintop20">
+      <view data-index="{{index}}"  bindtap="bindViewWifi" wx:for="{{wifiList}}" class="item" wx:key="*this">
+      <view class="item-name">
+        <text class="text-name">{{item.essid}}</text>
+      </view>
+      <view class="item-icon">
+        <image class='wifi-img' mode='aspectFit' src='../../images/wifi.png'></image>
+      </view>
+    </view>
+   
+  </view>
+
+    
+
+   <view class='modal-mask' hidden="{{hiddenmodal}}"></view>
+    <!-- 弹窗 -->
+    <view class='modal-dialog'  hidden="{{hiddenmodal}}" data-index="{{index}}">
+        <view class='modal-title'>{{ssid}}</view> 
+        <input type='text' password='true' bindinput='bindViewInput'  placeholder="请输入密码"/>  
+        <view class='modal-btn-wrapper'>
+          <view class='cancel-btn' style='color:rgba(7,17,27,0.6)' bindtap='cancel'>取消</view>
+          <view class='confirm-btn' style='color:#4d9efb' bindtap='confirm'>确定</view>
+        </view>
+    </view>
+   
+   
+    
+</view>

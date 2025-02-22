@@ -1,0 +1,12 @@
+/* pages/blueWifi/blueWifi.wxss */
+.item-icon {
+  flex: 0 0 80rpx;
+  height: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.wifi-img {
+  width: 60rpx;
+  height: 60rpx;
+}
