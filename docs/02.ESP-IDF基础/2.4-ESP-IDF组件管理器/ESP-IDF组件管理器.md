@@ -1,10 +1,11 @@
 # ESP32组件管理器
 
-> [!NOTE]
-> 对应视频教程：https://www.bilibili.com/video/BV1etfHYgE6M <br>
-> 对应示例代码：[button_blink](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/02.idf_basic/04/button_blink)
+> [!TIP] 🚀 **ESP32 组件管理器 | 管理和扩展你的项目组件**  
+> - 💡 **碎碎念**😎：本节将带你了解如何使用 ESP32 组件管理器进行项目组件的管理，帮助你更高效地使用和扩展 ESP32 组件。  
+> - 📺 **视频教程**：[点击观看](https://www.bilibili.com/video/BV1etfHYgE6M)  
+> - 💾 **示例代码**：[ESP32-Guide/code/02.idf_basic/button_blink](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/02.idf_basic/button_blink)  
+> - 📚 **官方文档**：[API 指南 » 工具 » IDF 组件管理器](https://docs.espressif.com/projects/esp-idf/zh_CN/stable/esp32/api-guides/tools/idf-component-manager.html)
 
-关于ESP-IDF组件管理器的文档，可以参考：[ API 指南 » 工具 » IDF 组件管理器](https://docs.espressif.com/projects/esp-idf/zh_CN/stable/esp32/api-guides/tools/idf-component-manager.html)
 ## 一、啥是组件管理器
 
 ESP-IDF官方对组件管理器的描述是这样的：

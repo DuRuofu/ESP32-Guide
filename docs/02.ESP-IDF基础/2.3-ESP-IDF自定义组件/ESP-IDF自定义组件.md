@@ -1,10 +1,11 @@
 # ESP32自定义组件
 
-> [!NOTE]
-> 对应视频教程：https://www.bilibili.com/video/BV182ftYHEox <br>
-> 对应示例代码：[blink_component](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/02.idf_basic/03/blink_component)
+> [!TIP] 🚀 **ESP32 自定义组件 | 玩转组件开发与配置**  
+> - 💡 **碎碎念**😎：本节将介绍如何创建和配置 ESP32 自定义组件，帮助你模块化复用代码。  
+> - 📺 **视频教程**：[点击观看](https://www.bilibili.com/video/BV182ftYHEox)  
+> - 💾 **示例代码**：[ESP32-Guide/code/02.idf_basic/blink_component](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/02.idf_basic/blink_component)  
+> - 📚 **官方文档**：[API 指南 » 构建系统](https://docs.espressif.com/projects/esp-idf/zh_CN/v5.3.2/esp32/api-guides/build-system.html?highlight=kconfig%20projbuild#component-configuration)
 
-关于ESP-IDF自定义组件部分的文档，可以参考：[API 指南 » 构建系统](https://docs.espressif.com/projects/esp-idf/zh_CN/v5.3.2/esp32/api-guides/build-system.html?highlight=kconfig%20projbuild#component-configuration)
 ## 一 、自定义组件介绍：
 
 之前在[ESP-IDF的工程结构](../2.1-ESP32工程结构/ESP-IDF的工程结构.md)里提到esp-idf项目的结构如下：

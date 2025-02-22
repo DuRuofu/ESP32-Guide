@@ -1,10 +1,10 @@
 # ESP32项目配置
 
-> [!NOTE]
-> 对应视频教程：https://www.bilibili.com/video/BV15xwbeiEnD <br>
-> 对应示例代码：[blink_menuconfig](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/02.idf_basic/02)
-
-关于项目配置部分的文档，可以参考：[ API 参考 » 项目配置](https://docs.espressif.com/projects/esp-idf/zh_CN/v5.3.2/esp32/api-reference/kconfig.html)
+> [!TIP] 🚀 **ESP32 项目配置 | 一步步掌握 Menuconfig 和 Kconfig 文件**  
+> - 💡 **碎碎念**😎：本节将通过一个具体例子，详细讲解如何使用 `menuconfig` 命令，以及 `Kconfig` 文件在项目配置中的作用，帮助你更好地掌控项目配置。  
+> - 📺 **视频教程**：[点击观看](https://www.bilibili.com/video/BV15xwbeiEnD)  
+> - 💾 **示例代码**：[ESP32-Guide/code/02.idf_basic/config](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/02.idf_basic/config)  
+> - 📚 **官方文档**：[ API 参考 » 项目配置](https://docs.espressif.com/projects/esp-idf/zh_CN/v5.3.2/esp32/api-reference/kconfig.html)
 
 首先我们先借助一个具体的例子来解释Menuconfig命令的使用和Kconfig文件的作用。
 ## 一、Menuconfig的使用

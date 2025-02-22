@@ -1,7 +1,7 @@
 # ESP32介绍
 
-> [!NOTE]
-> 对应视频教程：https://www.bilibili.com/video/BV1u861YHEso
+> [!TIP] 
+> - 📺 **视频教程**：[点击观看](https://www.bilibili.com/video/BV1u861YHEso)  
 ## 一、ESP32是什么？
 
 ESP32是一款由乐鑫（Espressif）公司研发的高性能、低功耗Wi-Fi和蓝牙双模芯片。它专为物联网（IoT）设计，集成了丰富的功能模块和硬件接口，是目前最流行的物联网嵌入式开发平台之一。
