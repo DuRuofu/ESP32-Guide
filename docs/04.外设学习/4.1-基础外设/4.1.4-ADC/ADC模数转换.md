@@ -2,10 +2,10 @@
 
 # ESP32外设-ADC入门
 
-> [!TIP] 🚀 **ESP32 外设-ADC入门 | 轻松实现模拟信号采集**  
+> [!TIP] 🚀 ESP32 外设-ADC入门 | 轻松实现模拟信号采集 
 > - 💡 **碎碎念**😎：本节将介绍 ESP32 的 ADC 外设，帮助你实现模拟信号采集，进行高精度数据处理。  
 > - 📺 **视频教程**：🚧 *开发中*  
-> - 💾 **示例代码**：🚧 *开发中*
+> - 💾 **示例代码**：[ESP32-Guide/code/04.peripheral/basics/adc](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/04.peripheral/basics/adc)
 
 >本文档主要转载自[Augtons正(单片机)](https://blog.csdn.net/m0_50064262 "Augtons正(单片机)")的ESP32系列教程（关于ADC部分的梳理甚至比官方教程都清晰）。
 

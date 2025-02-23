@@ -1,9 +1,9 @@
 # ESP32网络入门 - BluFi配网
 
-> [!TIP] 🚀 **BluFi配网 | 快速实现ESP32的WiFi配网功能**  
+> [!TIP] 🚀 BluFi配网 | 快速实现ESP32的WiFi配网功能  
 > - 💡 **碎碎念**😎：本节将介绍如何使用 BluFi 协议完成 ESP32 的 WiFi 配网程序，并讲解官方提供的配网小程序示例。  
 > - 📺 **视频教程**：暂无  
-> - 💾 **示例程序**：暂无  
+> - 💾 **示例程序**：[ESP32-Guide/code/09.extra/wifi_config/blufi](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/09.extra/wifi_config/blufi) 
 > - 📚 **官方文档**：[API 指南 » 低功耗蓝牙® » BluFi](https://docs.espressif.com/projects/esp-idf/zh_CN/v5.3.2/esp32/api-guides/ble/blufi.html?highlight=blufi)
 
 ## 一、介绍

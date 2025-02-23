@@ -1,6 +1,6 @@
 # ESP32项目配置
 
-> [!TIP] 🚀 **ESP32 项目配置 | 一步步掌握 Menuconfig 和 Kconfig 文件**  
+> [!TIP] 🚀 ESP32 项目配置 | 一步步掌握 Menuconfig 和 Kconfig 文件  
 > - 💡 **碎碎念**😎：本节将通过一个具体例子，详细讲解如何使用 `menuconfig` 命令，以及 `Kconfig` 文件在项目配置中的作用，帮助你更好地掌控项目配置。  
 > - 📺 **视频教程**：[点击观看](https://www.bilibili.com/video/BV15xwbeiEnD)  
 > - 💾 **示例代码**：[ESP32-Guide/code/02.idf_basic/config](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/02.idf_basic/config)  

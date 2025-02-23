@@ -1,9 +1,9 @@
 # Smartconfig配网
 
-> [!TIP] 🚀 **Smartconfig配网 | 快速连接WiFi**  
+> [!TIP] 🚀 Smartconfig配网 | 快速连接WiFi  
 > - 💡 **碎碎念**😎：本节介绍如何使用 Smartconfig 协议完成 ESP32 的 WiFi 配网程序，并讲解官方提供的示例程序。  
 > - 📺 **视频教程**：暂无  
-> - 💾 **示例程序**：暂无  
+> - 💾 **示例程序**：[ESP32-Guide/code/09.extra/wifi_config/smart_config](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/09.extra/wifi_config/smart_config)
 > - 📚 **相关文档**：[ API 参考 » 连网 API » SmartConfig](https://docs.espressif.com/projects/esp-idf/zh_CN/v5.3.2/esp32/api-reference/network/esp_smartconfig.html?highlight=smartconfig)
 
 ## 一、介绍
