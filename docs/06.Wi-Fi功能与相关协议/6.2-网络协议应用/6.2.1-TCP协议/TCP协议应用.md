@@ -4,7 +4,7 @@
 > [!TIP] 🚀 TCP协议基础 | 可靠的网络通信 
 > - 💡 **碎碎念**😎：本节将介绍如何在 ESP32 上使用 TCP 协议进行网络通信，帮助你理解 TCP 的工作原理，并在 ESP32 上实现客户端和服务器功能。  
 > - 📺 **视频教程**：暂无  
-> - 💾 **示例代码**：[ESP32-Guide/code/05.wifi/tcp](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/05.wifi/tcp)
+> - 💾 **示例代码**：[ESP32-Guide/code/06.wifi/tcp](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/06.wifi/tcp)
 
 
 ## 一、介绍
@@ -41,7 +41,7 @@ C/S分布式模式，是计算机用语。C是指Client，S是指Server，C/S模
 
 ## 二、使用
 
->本节的工程基于[ESP32WIFI-1.WIFI连接](https://www.duruofu.top/2024/03/15/4.%E7%A1%AC%E4%BB%B6%E7%9B%B8%E5%85%B3/MCU/ESP32/05.ESP32WIFI%E5%85%A5%E9%97%A8/5.1-ESP32%E7%BD%91%E7%BB%9C%E5%85%A5%E9%97%A8-WIFI%E8%BF%9E%E6%8E%A5/ESP32%E7%BD%91%E7%BB%9C%E5%85%A5%E9%97%A8-WIFI%E8%BF%9E%E6%8E%A5/)中的[wifi_sta](https://github.com/DuRuofu/ESP32_Learning/tree/master/05.wifi/wifi_sta)历程
+>本节的工程基于[ESP32WIFI-1.WIFI连接](https://www.duruofu.top/2024/03/15/4.%E7%A1%AC%E4%BB%B6%E7%9B%B8%E5%85%B3/MCU/ESP32/05.ESP32WIFI%E5%85%A5%E9%97%A8/5.1-ESP32%E7%BD%91%E7%BB%9C%E5%85%A5%E9%97%A8-WIFI%E8%BF%9E%E6%8E%A5/ESP32%E7%BD%91%E7%BB%9C%E5%85%A5%E9%97%A8-WIFI%E8%BF%9E%E6%8E%A5/)中的[wifi_sta](https://github.com/DuRuofu/ESP32_Learning/tree/master/06.wifi/wifi_sta)历程
 
 下图展示了TCP协议服务端和客户端的基本流程：
 
@@ -375,7 +375,7 @@ do
 
 ### 3.1 TCP客户端程序
 
->代码见： https://github.com/DuRuofu/ESP32_Learning/tree/master/05.wifi/wifi_tcp_client
+>代码见： https://github.com/DuRuofu/ESP32_Learning/tree/master/06.wifi/wifi_tcp_client
 
 ```c
 #include <stdio.h>
@@ -572,7 +572,7 @@ void app_main(void)
 
 ### 3.2 TCP服务端程序
 
->代码见： https://github.com/DuRuofu/ESP32_Learning/tree/master/05.wifi/wifi_tcp_server
+>代码见： https://github.com/DuRuofu/ESP32_Learning/tree/master/06.wifi/wifi_tcp_server
 
 
 ```c

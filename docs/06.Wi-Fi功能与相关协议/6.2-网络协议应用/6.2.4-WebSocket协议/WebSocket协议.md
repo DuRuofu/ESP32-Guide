@@ -3,7 +3,7 @@
 > [!TIP] 🚀 WebSocket协议 | 实时双向通信  
 > - 💡 **碎碎念**😎：本节将介绍如何在 ESP32 上实现 WebSocket 协议，进行实时双向通信。你将学习如何创建 WebSocket 服务器和客户端，支持快速、低延迟的数据传输。  
 > - 📺 **视频教程**：暂无  
-> - 💾 **示例代码**：[ESP32-Guide/code/05.wifi/websocket](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/05.wifi/websocket)
+> - 💾 **示例代码**：[ESP32-Guide/code/06.wifi/websocket](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/06.wifi/websocket)
 
 ## 一、介绍
 

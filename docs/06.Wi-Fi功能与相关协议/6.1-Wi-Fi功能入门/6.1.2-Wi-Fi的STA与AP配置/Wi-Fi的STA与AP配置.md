@@ -4,7 +4,7 @@
 > [!TIP] 🚀 WiFi基础使用 | 让你的ESP32连接互联网  
 > - 💡 **碎碎念**😎：本节将介绍如何在 ESP32 上使用 WiFi 功能，包括WIFI AP 和WIFI STA。  
 > - 📺 **视频教程**：🚧 *开发中*  
-> - 💾 **示例代码**：[ESP32-Guide/code/05.wifi/wifi_basic](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/05.wifi/wifi_basic)
+> - 💾 **示例代码**：[ESP32-Guide/code/06.wifi/wifi_basic](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/06.wifi/wifi_basic)
 ## 一、介绍
 
 在开始使用WIFI之前，我们需要掌握一些基本的概念和前置知识：
@@ -423,7 +423,7 @@ esp_netif_dhcpc_start(esp_netif);
 下面基于第二部分的教程实现了WIFI AP模式
 代码链接：
 
-> https://github.com/DuRuofu/ESP32_Learning/tree/master/05.wifi/wifi_ap
+> https://github.com/DuRuofu/ESP32_Learning/tree/master/06.wifi/wifi_ap
 
 ```c
 #include <string.h>
@@ -521,7 +521,7 @@ void app_main(void)
 下面基于第二部分的教程实现了WIFI STA模式
 代码链接：
 
-> https://github.com/DuRuofu/ESP32_Learning/tree/master/05.wifi/wifi_sta
+> https://github.com/DuRuofu/ESP32_Learning/tree/master/06.wifi/wifi_sta
 
 ```c
 
@@ -631,13 +631,13 @@ void app_main(void)
 
 代码链接：
 
-> https://github.com/DuRuofu/ESP32_Learning/tree/master/05.wifi/wifi_sta_static_ip
+> https://github.com/DuRuofu/ESP32_Learning/tree/master/06.wifi/wifi_sta_static_ip
 
 ### 3.3 WIFI Scan
 
 代码链接：
 
-> https://github.com/DuRuofu/ESP32_Learning/tree/master/05.wifi/wifi_scan
+> https://github.com/DuRuofu/ESP32_Learning/tree/master/06.wifi/wifi_scan
 
 效果：
 

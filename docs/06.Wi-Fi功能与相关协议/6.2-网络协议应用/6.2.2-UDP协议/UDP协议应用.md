@@ -3,7 +3,7 @@
 > [!TIP] 🚀 UDP协议基础 | 快速但不可靠的通信  
 > - 💡 **碎碎念**😎：本节将介绍如何在 ESP32 上使用 UDP 协议进行网络通信，了解 UDP 的特性和使用场景，并在 ESP32 上实现客户端和服务器功能。  
 > - 📺 **视频教程**：暂无  
-> - 💾 **示例代码**：[ESP32-Guide/code/05.wifi/udp](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/05.wifi/udp)
+> - 💾 **示例代码**：[ESP32-Guide/code/06.wifi/udp](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/06.wifi/udp)
 
 ## 一、概述
 
@@ -192,7 +192,7 @@ ESP_LOGI(TAG, "Send success");
 
 ### 3.1 UDP客户端
 
->代码:https://github.com/DuRuofu/ESP32_Learning/tree/master/05.wifi/wifi_udp_client
+>代码:https://github.com/DuRuofu/ESP32_Learning/tree/master/06.wifi/wifi_udp_client
 
 ```c
 #include <stdio.h>
@@ -379,7 +379,7 @@ void app_main(void)
 ![](attachments/20240317151255.png)
 ### 3.2 UDP服务端
 
->代码：https://github.com/DuRuofu/ESP32_Learning/tree/master/05.wifi/wifi_udp_server
+>代码：https://github.com/DuRuofu/ESP32_Learning/tree/master/06.wifi/wifi_udp_server
 
 ```c
 #include <stdio.h>

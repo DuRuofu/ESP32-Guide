@@ -1,7 +1,10 @@
 # ESP32介绍
 
-> [!TIP] 
+> [!TIP] 🚀 ESP32初探 | 是什么？ 为什么？ 怎么办？
+> - 💡 **碎碎念**😎：本文向你介绍ESP32是什么，为啥要学ESP32，怎么学ESP32。
 > - 📺 **视频教程**：[点击观看](https://www.bilibili.com/video/BV1u861YHEso)  
+
+
 ## 一、ESP32是什么？
 
 ESP32是一款由乐鑫（Espressif）公司研发的高性能、低功耗Wi-Fi和蓝牙双模芯片。它专为物联网（IoT）设计，集成了丰富的功能模块和硬件接口，是目前最流行的物联网嵌入式开发平台之一。
@@ -109,15 +112,19 @@ ESP-IDF（Espressif IoT Development Framework）是乐鑫官方提供的开发�
 #### 途径：
 
 ![](attachments/4.png)
-首先选择一个实际项目作为切入点，例如让 ESP32 控制一个 LED 并通过 Wi-Fi 连接到本地网络进行远程控制。在项目中遇到具体功能需求时，针对性地学习相关模块，比如 GPIO 操作、Wi-Fi 配置等，MQTT协议。通过搜索引擎（如Bing）或视频教程快速理解基础概念，在掌握基础概念后，去阅读官方文档，了解ESP32这个模块如何使用（看不懂再去看视频），以官方历程代码为参考，结合项目需求进行实验和优化。随着学习的深入，可以拓展到更复杂的功能模块，比如蓝牙通信或低功耗模式，最终通过一个个项目的积累，系统掌握 ESP32 的开发技能。这种以项目驱动为核心、逐步深入的学习方式，可以帮助快速上手，同时在实践中巩固知识。
+
+
+首先选择一个实际项目作为切入点，例如让 ESP32 控制一个 LED 并通过 Wi-Fi 连接到本地网络进行远程控制。在项目中遇到具体功能需求时，针对性地学习相关模块，比如 GPIO 操作、Wi-Fi 配置等，MQTT协议。通过搜索引擎（如Bing）或视频教程快速理解基础概念，在掌握基础概念后，去阅读官方文档，了解ESP32这个模块如何使用（看不懂再去看视频），以官方历程代码为参考，结合项目需求进行实验和优化。
+
+随着学习的深入，可以拓展到更复杂的功能模块，比如蓝牙通信或低功耗模式，最终通过一个个项目的积累，系统掌握 ESP32 的开发技能。这种以项目驱动为核心、逐步深入的学习方式，可以帮助快速上手，同时在实践中巩固知识。
 
 ### 3.3 学习资源推荐
 
 重要的事情说三遍：
 
-- **官方文档**：[Espressif 官方文档](https://idf.espressif.com/zh-cn/index.html)
-- **官方文档**：[Espressif 官方文档](https://idf.espressif.com/zh-cn/index.html)
-- **官方文档**：[Espressif 官方文档](https://idf.espressif.com/zh-cn/index.html)
+- **官方文档**：[Espressif 官方文档](https://idf.espressif.com/zh-cn/index.html) !!!
+- **官方文档**：[Espressif 官方文档](https://idf.espressif.com/zh-cn/index.html) !!!
+- **官方文档**：[Espressif 官方文档](https://idf.espressif.com/zh-cn/index.html) !!!
 
 乐鑫的官方文档和官方历程一定是最好的学习ESP32的素材和指南。
 

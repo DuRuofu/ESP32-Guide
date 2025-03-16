@@ -3,7 +3,7 @@
 > [!TIP] 🚀 MQTT协议 | 让物联网设备轻松沟通 
 > - 💡 **碎碎念**😎：本节将介绍如何在 ESP32 上使用 MQTT 协议，实现设备之间的消息传递。你将学习如何连接到 MQTT 服务器，发布和订阅消息。  
 > - 📺 **视频教程**：暂无  
-> - 💾 **示例代码**：[ESP32-Guide/code/05.wifi/mqtt](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/05.wifi/mqtt)
+> - 💾 **示例代码**：[ESP32-Guide/code/06.wifi/mqtt](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/06.wifi/mqtt)
 
 ## 一、介绍
 
