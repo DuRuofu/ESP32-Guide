@@ -1,0 +1,7 @@
+/* .vitepress/theme/custom.css */
+:root {
+  /* hero标题渐变色 */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg,rgb(243, 32, 13),rgb(236, 153, 109));
+
+}
