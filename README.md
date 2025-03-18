@@ -33,26 +33,9 @@
 
 其中基础章节一定要确保自己掌握，实践和进阶部分推荐按照个人需求进行选学。
 
-点击此处查看详细目录：[](./docs/docs/guide/README.md)
+点击此处查看详细目录：[详细目录](./docs/docs/guide/目录.md)
 
 <div STYLE="page-break-after: always;"></div>
-
-### 修订历史：
-
-|      文档名称       |   版本   |   作者    |     时间     |    备注     |
-| :-------------: | :----: | :-----: | :--------: | :-------: |
-|    ESP32学习计划    | v1.0.0 | DuRuofu | 2023-08-28 |   首次建立    |
-|    ESP32学习计划    | v1.0.1 | DuRuofu | 2023-09-2  |    补充     |
-|    ESP32学习计划    | v1.1.0 | DuRuofu | 2023-09-13 |    补充     |
-|    ESP32学习计划    | v1.2.0 | DuRuofu |  2024-01   |  补充环境搭建   |
-|    ESP32学习计划    | v1.3.0 | DuRuofu |  2024-02   |  补充IDF基础  |
-|    ESP32学习计划    | v1.4.0 | DuRuofu |  2024-03   |  补充外设学习   |
-|    ESP32学习计划    | v1.4.0 | DuRuofu |  2024-04   | 补充WIFI部分  |
-| ESP32从初见到入门（一稿） | v1.5.0 | DuRuofu | 2024-12-26 | 整理汇总，重新编排 |
-
-<div STYLE="page-break-after: always;"></div>
-
-
 <div STYLE="page-break-after: always;"></div>
 
 ### 相关硬件及开发板：

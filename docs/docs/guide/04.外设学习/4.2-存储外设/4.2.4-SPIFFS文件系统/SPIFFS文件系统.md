@@ -107,7 +107,7 @@ if (ret != ESP_OK) {
 - **format_if_mount_failed:** 如果为 true，在挂载失败时将格式化文件系统。
 ## 三、案例
 
-下面的示例程序来自：https://github.com/espressif/esp-idf/tree/v5.2.1/examples/storage/spiffsgen
+下面的示例程序来自： https://github.com/espressif/esp-idf/tree/v5.2.1/examples/storage/spiffsgen
 
 主要功能包括初始化 SPIFFS、读取文件内容以及计算文件的 MD5 哈希值。
 

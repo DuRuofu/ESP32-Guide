@@ -5,6 +5,7 @@
 > - 💡 **碎碎念**😎：本节将介绍 ESP32 的 GPIO 外设，帮助你掌握如何使用 GPIO 引脚进行硬件控制和信号传输。  
 > - 📺 **视频教程**：🚧 *开发中*  
 > - 💾 **示例代码**：[ESP32-Guide/code/04.peripheral/basics/gpio](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/04.peripheral/basics/gpio)
+> 
 
 ## 一、GPIO介绍
 

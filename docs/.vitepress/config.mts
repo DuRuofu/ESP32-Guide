@@ -35,10 +35,8 @@ export default defineConfig(
       siteTitle: "ESP32-Guide",
       //网站底部设置
       footer: {
-        //底部信息
-        message: '<a href="https://beian.miit.gov.cn/#/Integrated/index">陕ICP备2022007454号-2</a>',
         //底部版权
-        copyright: " Copyright © 2023 - DuRuofu.All Rights Reserved. ",
+        copyright: " Copyright © 2023 - ESP32-Guide.All Rights Reserved. ",
       },
       //本地搜索
       search: {
@@ -57,7 +55,7 @@ export default defineConfig(
 
         {
           text: '🔥ESP32教程',
-          link: 'docs/guide/README.md',
+          link: 'docs/guide/目录.md',
         },
         { text: '关于', link: 'docs/about/About.md'},
       ],
@@ -66,8 +64,8 @@ export default defineConfig(
       sidebar: {
         "docs/guide/": [
         {
-          text: 'ESP32教程-2025新版',
-            link: 'docs/guide/README.md',
+            text: '目录',
+            link: 'docs/guide/目录.md',
           items: [
             {
               text: '〇、常见问题及解决',

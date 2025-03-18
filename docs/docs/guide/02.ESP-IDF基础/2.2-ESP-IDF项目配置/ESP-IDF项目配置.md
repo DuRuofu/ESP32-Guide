@@ -193,7 +193,7 @@ endmenu
 
 我们先创建个框架：
 
-``` Kconfig
+``` 
 menu "点灯配置"
 
 endmenu

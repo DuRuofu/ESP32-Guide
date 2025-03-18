@@ -11,10 +11,10 @@ hero:
   actions:
     - theme: brand
       text: 🔥ESP32教程
-      link: /docs/guide/README.md
+      link: /docs/guide/目录.md
     - theme: alt
       text: 关于
-      link: /docs/guide/about/About.md
+      link: /docs/about/About.md
 
 features:
   - title: 实践教程
