@@ -50,12 +50,12 @@ esp-idf的标准目录如下所示：
 ``` CMake
 cmake_minimum_required(VERSION 3.16)
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
-project(teat)
+project(test)
 ```
 
 > `cmake_minimum_required(VERSION 3.5)` 必须放在 CMakeLists.txt 文件的第一行，它会告诉 CMake 构建该项目所需要的最小版本号。ESP-IDF 支持 CMake 3.5 或更高的版本。
    `include($ENV{IDF_PATH}/tools/cmake/project.cmake)` 会导入 CMake 的其余功能来完成配置项目、检索组件等任务。
-   `project(teat)` 会创建项目本身，括号内容作为项目名称。
+   `project(test)` 会创建项目本身，括号内容作为项目名称。
 
 上面的内容为 项目**必要部分**，除此之外，还有一些 **可选部分**。
 
