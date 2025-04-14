@@ -292,7 +292,8 @@ wifi_config_t sta_config = {
 		.password = ESP_WIFI_STA_PASSWD,
 		.bssid_set = false,
 	},
-} ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &sta_config));
+};
+ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &sta_config));
 
 ```
 
