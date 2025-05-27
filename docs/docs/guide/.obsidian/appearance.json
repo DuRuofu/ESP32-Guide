@@ -3,5 +3,6 @@
     "coffeebean-补充图片对齐语法",
     "page-width"
   ],
-  "cssTheme": "GitHub Theme"
+  "cssTheme": "GitHub Theme",
+  "accentColor": "#37b94d"
 }
