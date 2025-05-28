@@ -4,5 +4,7 @@
     "page-width"
   ],
   "cssTheme": "GitHub Theme",
-  "accentColor": "#37b94d"
+  "accentColor": "#37b94d",
+  "baseFontSizeAction": true,
+  "baseFontSize": 20
 }

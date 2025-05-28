@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10.项目实战/10.1-模块驱动案例/10.1.1-28BYJ-48步进电机/28BYJ-48步进电机.md",
+                "file": "10.项目实战/10.1-模块驱动案例/10.1.2-SG90舵机/SG90舵机.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "28BYJ-48步进电机"
+              "title": "SG90舵机"
             }
           }
         ]
@@ -85,13 +85,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "10.项目实战/10.1-模块驱动案例/10.1.1-28BYJ-48步进电机/28BYJ-48步进电机.md",
+                "file": "10.项目实战/10.1-模块驱动案例/10.1.2-SG90舵机/SG90舵机.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "28BYJ-48步进电机 的大纲"
+              "title": "SG90舵机 的大纲"
             }
           }
         ]
@@ -109,8 +109,12 @@
   },
   "active": "ba89e06e4ba5dcbd",
   "lastOpenFiles": [
-    "10.项目实战/10.1-模块驱动案例/10.1.2-SG90舵机/SG90舵机.md",
     "10.项目实战/10.1-模块驱动案例/10.1.1-28BYJ-48步进电机/28BYJ-48步进电机.md",
+    "04.外设学习/4.1-基础外设/4.1.6-LED_PWM/LED_PWM控制.md",
+    "10.项目实战/10.1-模块驱动案例/10.1.2-SG90舵机/SG90舵机.md",
+    "10.项目实战/10.1-模块驱动案例/10.1.2-SG90舵机/attachments/Pasted image 20250528152414.png",
+    "10.项目实战/10.1-模块驱动案例/10.1.2-SG90舵机/attachments/Pasted image 20250528152307.png",
+    "10.项目实战/10.1-模块驱动案例/10.1.2-SG90舵机/attachments",
     "10.项目实战/10.1-模块驱动案例/10.1.1-28BYJ-48步进电机/attachments/Pasted image 20250527165130.png",
     "10.项目实战/10.1-模块驱动案例/10.1.1-28BYJ-48步进电机/attachments/Pasted image 20250527163637.png",
     "10.项目实战/10.1-模块驱动案例/10.1.1-28BYJ-48步进电机/attachments/Pasted image 20250527163522.png",
@@ -118,7 +122,6 @@
     "10.项目实战/10.1-模块驱动案例/10.1.1-28BYJ-48步进电机/attachments/Pasted image 20250527161829.png",
     "10.项目实战/10.1-模块驱动案例/10.1.1-28BYJ-48步进电机/attachments",
     "目录.md",
-    "04.外设学习/4.1-基础外设/4.1.6-LED_PWM/LED_PWM控制.md",
     "04.外设学习/4.1-基础外设/4.1.1-GPIO/GPIO入门.md",
     "attachments/Templates.md",
     "04.外设学习/4.1-基础外设/4.1.4-ADC/ADC模数转换.md",
@@ -134,7 +137,6 @@
     "attachments/20250202192226.png",
     "01.认识ESP32/1.2-ESP32开发环境搭建/1.环境搭建-Windows.md",
     "03.FreeRTOS基础/3.4-FreeRTOS软件定时器/FreeRTOS软件定时器.md",
-    "00.常见问题及解决方案/attachments/20250506154522.png",
-    "00.常见问题及解决方案/attachments/Pasted image 20250506154437.png"
+    "00.常见问题及解决方案/attachments/20250506154522.png"
   ]
 }
