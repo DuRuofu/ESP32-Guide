@@ -1,9 +1,0 @@
-/* pages/wifiConfig/wifiConfig.wxss */
-.container{
-  padding-top: 50rpx;
-}
-.wifi-img {
-  width:300px;
-  height:234px;
-  margin-top:20px;
-}

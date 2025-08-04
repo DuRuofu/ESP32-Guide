@@ -29,9 +29,7 @@ Inter-IC Sount Bus(I2S)是飞利浦半导体公司(现为恩智浦半导体公�
 
 **SCK: (continuous serial clock)  串行时钟**：标准名称为“连续串列主频”
 
-
 **WS: (word select)  字段（声道）选择：** 也称为“帧同步线”
-
 
 **SD: (serial data)  串行数据 ：** 也可称为SDATA，SDIN，SDOUT，DACDAT，ADCDAT等
 
