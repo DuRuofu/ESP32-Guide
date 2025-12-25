@@ -5,13 +5,15 @@
 > - 💡 **碎碎念**😎：本节将介绍 ESP32 的 GPIO 外设，帮助你掌握如何使用 GPIO 引脚进行硬件控制和信号传输。  
 > - 📺 **视频教程**：🚧 *开发中*  
 > - 💾 **示例代码**：[ESP32-Guide/code/04.peripheral/basics/gpio](https://github.com/DuRuofu/ESP32-Guide/tree/main/code/04.peripheral/basics/gpio)
-> 
 
 ## 一、GPIO介绍
 
-"通用 IO"或"GPIO"是英文"General-Purpose Input/Output Port"的简写，意为通用输入/输出接 口。当设置为输入模式时，它可以用于感知外部信号；而设置为输出模式时，则可以用于控制 外部设备。在开发过程中，我们经常使用一些简单的外部模块，如 LED、按键和蜂鸣器等。要 使用这些模块，只需将它们与芯片的 GPIO 连接，然后通过控制 GPIO 的输出/读取高低电平即可。
+"通用 IO"或"GPIO"是英文"General-Purpose Input/Output Port"的简写，意为通用输入/输出接 口。当设置为输入模式时，它可以用于感知外部信号；而设置为输出模式时，则可以用于控制外部设备。在开发过程中，我们经常使用一些简单的外部模块，如 LED、按键和蜂鸣器等。要使用这些模块，只需将它们与芯片的 GPIO 连接，然后通过控制 GPIO 的输出/读取高低电平即可。
 
-ESP32 芯片具有 34 个物理 GPIO 管脚（GPIO0 ~ GPIO19、GPIO21 ~ GPIO23、GPIO25 ~ GPIO27 和 GPIO32 ~ GPIO39）。每个管脚都可用作一个通用 IO，或连接一个内部的外设信号。通过 IO MUX、RTC IO MUX 和 GPIO 交换矩阵，可配置外设模块的输入信号来源于任何的 IO 管脚，并且外设模块的输出信号也可连接到任意 IO 管脚。这些模块共同组成了芯片的 IO 控制。
+- ESP32 芯片具有 34 个物理 GPIO 管脚（GPIO0 ~ GPIO19、GPIO21 ~ GPIO23、GPIO25 ~ GPIO27 和 GPIO32 ~ GPIO39）。
+- ESP32-C3 芯片具有 22 个物理 GPIO 管脚（GPIO0 ~ GPIO21)
+
+每个管脚都可用作一个通用 IO，或连接一个内部的外设信号。通过 IO MUX、RTC IO MUX 和 GPIO 交换矩阵，可配置外设模块的输入信号来源于任何的 IO 管脚，并且外设模块的输出信号也可连接到任意 IO 管脚。这些模块共同组成了芯片的 IO 控制。
 
 ## 二、相关函数介绍
 
