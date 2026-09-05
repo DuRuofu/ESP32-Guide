@@ -50,16 +50,14 @@ void app_main(void)
     {
         // Fade to 100% duty cycle within FADE_TIME milliseconds
         ESP_ERROR_CHECK(ledc_set_fade_with_time(LEDC_MODE, LEDC_CHANNEL, LEDC_DUTY, FADE_TIME));
-        ESP_ERROR_CHECK(ledc_fade_start(LEDC_MODE, LEDC_CHANNEL, LEDC_FADE_WAIT_DONE));
-
-        // Wait for the fade to complete
+        ESP_ERROR_CHECK(ledc_fade_start(LEDC_MODE, LEDC_CHANNEL, LEDC_FADE_NO_WAIT));
+        printf("LED fading up (hardware handles it in background)\n");
         vTaskDelay(FADE_TIME / portTICK_PERIOD_MS);
 
         // Fade back to 0% duty cycle within FADE_TIME milliseconds
         ESP_ERROR_CHECK(ledc_set_fade_with_time(LEDC_MODE, LEDC_CHANNEL, 0, FADE_TIME));
-        ESP_ERROR_CHECK(ledc_fade_start(LEDC_MODE, LEDC_CHANNEL, LEDC_FADE_WAIT_DONE));
-
-        // Wait for the fade to complete
+        ESP_ERROR_CHECK(ledc_fade_start(LEDC_MODE, LEDC_CHANNEL, LEDC_FADE_NO_WAIT));
+        printf("LED fading down (hardware handles it in background)\n");
         vTaskDelay(FADE_TIME / portTICK_PERIOD_MS);
     }
 }
